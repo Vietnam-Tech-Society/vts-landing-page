@@ -1,38 +1,410 @@
+@font-face {
+  font-family: VTS;
+  src: url(./assets/font/brown.ttf);
+}
+@font-face {
+  font-family: VTS-light;
+  src: url(./assets/font/brown-light.ttf);
+}
+
 .App {
-  text-align: center;
-}
-
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
+  background-color: #010042;
   min-height: 100vh;
+}
+
+.navbar-header {
+  font-family: VTS;
+  font-weight: bold;
+  font-size: max(1.4vw, 20px);
+  padding-left: 10% !important;
+  padding-right: 10% !important;
+  justify-content: space-between;
+  margin-bottom: 20px;
+  background: rgba(1, 0, 66, 0.582) !important;
+  backdrop-filter: blur(3.47vw);
+}
+
+.center {
+  display: block;
+}
+
+#big-text {
+  font-family: VTS;
+  font-style: normal;
+  font-weight: normal;
+  font-size: max(5vw, 35px);
+  color: #ffffff;
+  text-shadow: 0 0 1.39vw rgba(66, 255, 223, 0.79);
+}
+
+#small-text {
+  padding-left: max(4vw, 20px);
+  padding-right: max(4vw, 20px);
+  font-family: VTS;
+  font-style: normal;
+  font-weight: normal;
+  font-size: max(2vw, 15px);
+
+  color: #FFFFFF;
+  margin-bottom: 4vh;
+}
+
+#main-container {
+  padding-left: max(8vw, 20px);
+  padding-right: max(8vw, 20px);
+}
+
+#subscribe-button {
+  background-color: #5401A1;
+  border: none;
+  color: #FFFFFF;
+  font-family: VTS;
+  text-align: center;
+  font-size: max(1.4vw, 20px);
+  min-height: 3vw;
+  min-width: 11vw;
+  border-radius: 0px;
+}
+
+#subscribe-form {
+  margin-top: 30vh;
+  width: 100%;
+}
+
+#cta {
+  background: linear-gradient(91.18deg, rgba(255, 255, 255, 0.2407) 26.55%, rgba(255, 255, 255, 0.029) 88.74%);
+  border: 1px solid #FFFFFF;
+  backdrop-filter: blur(1.39vw);
+  height: 50px;
+  color: #ffffff;
+}
+
+#cta-button {
+  background: #FFFFFF;
+  border: 1px solid #FFFFFF;
+  font-family: VTS;
+  color: #5401A1;
+  font-size: 15px;
+  text-align: center;
+  font-weight: bold;
+  height: 50px;
+}
+
+.row {
+  margin-left: 0px !important;
+  margin-right: 0px !important;
+}
+
+#why-text {
+  padding-left: max(8vw, 20px);
+  padding-right: max(8vw, 20px);
+  font-family: VTS-light;
+  font-style: normal;
+  font-weight: lighter;
+  font-size: max(2vw, 15px);
+  color: #FFFFFF;
+  margin-bottom: 4vh;
+}
+
+#learn {
+  font-family: VTS;
+  font-style: normal;
+  font-weight: bold;
+  font-size: max(1.5vw, 15px);
+  color: #14FFD8;
+}
+
+#value-head {
+  font-family: VTS;
+  font-style: normal;
+  font-weight: bold;
+  font-size: max(3vw, 25px);
+  color: #14FFD8;
+}
+
+#value-text {
+  font-family: VTS-light;
+  font-style: normal;
+  font-weight: lighter;
+  font-size: max(1.25vw, 12px);
+  text-align: center;
+  color: #FFFFFF;
+}
+
+#final-cta {
+  background: #14FFD8;
+  min-width: 80%;
+  padding: 20px min(4vw, 10px);
+}
+
+#final-cta-big-text {
+  font-family: VTS;
+  font-style: normal;
+  font-weight: lighter;
+  font-size: max(4vw, 25px);
+  color: #010042;
+  mix-blend-mode: normal;
+}
+
+#final-cta-small-text {
+  font-family: VTS;
+  font-style: normal;
+  font-weight: normal;
+  font-size: max(1.5vw, 15px);
+
+  color: #010042;
+}
+
+#final-cta-button {
+  background-color: #5401A1;
+  border: none;
+  color: #FFFFFF;
+  font-family: VTS;
+  font-size: max(1.5vw, 15px);
+  text-align: center;
+  min-width: 100px;
+  min-height: 40px;
+  width: 100%;
+}
+
+#footer {
+  margin-top: 10vh;
+  background: #010042;
+  box-shadow: 0px -2.78vw 5.56vw rgba(84, 1, 161, 0.37);
+  padding: 10vh 0px;
+}
+
+.flex-gap {
+  display: inline-flex;
+  flex-wrap: wrap;
+  gap: 6vw;
+}
+
+.sub-background {
+  background-image: url(./assets/img/why.png);
+  background-repeat: no-repeat;
+}
+
+.custom-modal-dialog {
+  border-radius: 0px !important;
+}
+
+#sub-join {
+  text-align: center;
+  font-family: VTS;
+  font-style: normal;
+  font-weight: normal;
+  font-size: max(2vw, 20px);
+  text-align: center;
+
+  color: #5401A1;
+
+  mix-blend-mode: normal;
+}
+
+#modal-form {
+  border-radius: 0px;
+  background: #FFFFFF;
+  border: 2px solid #5401A1;
+  font-size: max(1.1vw, 12px);
+}
+
+#modal-submit-button {
+  border-radius: 0px;
+  width: 100%;
+  background: #5401A1;
+  border: 1px solid #5401A1;
+  font-family: VTS;
+  color: #FFFFFF;
+  font-size: max(1.1vw, 12px);
+  text-align: center;
+  font-weight: bold;
+}
+
+input[type=email] {
+  font-family: VTS;
+  font-size: 1.1vw;
+  color: #5401A1;
+}
+
+.about-sub-header {
+  font-family: VTS;
+  font-style: normal;
+  font-weight: normal;
+  font-size: max(2.75vw, 25px);
+  color: #FFFFFF;
+  mix-blend-mode: normal;
+}
+
+.text {
+  font-family: VTS-light;
+  font-style: normal;
+  font-weight: lighter;
+  font-size: max(1.5vw, 15px);
+  color: #FFFFFF;
+}
+
+.des {
+  font-family: VTS;
+  font-style: normal;
+  font-size: max(1.5vw, 15px);
+  line-height: max(1.5vw, 15px);
+  text-align: center;
+  color: #FFFFFF;
+}
+
+#about-logo-icon {
   display: flex;
-  flex-direction: column;
-  align-items: center;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  margin-bottom: 10px;
 }
 
-.App-link {
-  color: #61dafb;
+.logo-container {
+  padding-left: max(8vw, 10px);
+  padding-right: max(8vw, 10px);
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
+.meet-desc {
+  font-family: VTS-light;
+  font-style: normal;
+  font-weight: lighter;
+  font-size: max(2.25vw, 20px);
+  color: #FFFFFF;
+}
+
+.team-container {
+  margin-top: 2vh;
+  padding-left: 15px !important;
+  padding-right: 15px !important;
+  
+}
+
+.team-row-container {
+  max-width: 1200px;
+  margin: 0 auto;
+  display: grid;
+  grid-gap: 1rem;
+  justify-content: center;
+}
+
+@media (min-width: 600px) {
+  .team-row-container { grid-template-columns: repeat(3, 1fr); }
+}
+
+@media (min-width: 900px) {
+  .team-row-container { grid-template-columns: repeat(4, 1fr); }
+}
+
+.team-img-container {
+  position: relative;
+  width: max(17vw, 200px);
+  height: max(17vw, 200px);
+}
+
+.team-img-container .after {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  display: none;
+  color: #FFF;
+}
+
+.team-img-container:hover .after {
+  display: block;
+  background: rgba(83, 0, 161, 0.76);
+}
+
+.team-img {
+  width: 100%;
+  height: 100%;
+}
+
+.name {
+  margin-top: 5.5vw;
+  text-align: center;
+  font-family: VTS;
+  font-style: normal;
+  font-weight: bold;
+  font-size: max(2vw, 20px);
+  color: #FFFFFF;
+}
+
+.role {
+  margin-top: 0.69vw;
+
+  font-family: VTS-light;
+  font-style: normal;
+  font-weight: lighter;
+  font-size: 1.25vw;
+
+  text-align: center;
+
+  color: #FFFFFF;
+}
+
+.custom-member-modal {
+  background-color: #5300A1 !important;
+  border-radius: 0px !important;
+  color: #FFFFFF !important;
+}
+
+@media (min-width: 576px) {
+  .modal-dialog { 
+    max-width: max(45vw, 500px) !important;
   }
-  to {
-    transform: rotate(360deg);
-  }
+}
+
+.close {
+  float: right;
+  font-size: 1.5rem;
+  font-weight: 700;
+  line-height: 1;
+  color: #FFFFFF !important;
+  font-family: VTS-light;
+  /* opacity: .5; */
+}
+
+.close:hover {
+  cursor: pointer;
+}
+
+.team-modal-image {
+  width: max(15vw, 100px);
+  height: max(15vw, 100px);
+}
+
+.li-container {
+  width: max(1.5vw, 30px);
+  height: max(1.5vw, 30px);
+  margin-top: 20px;
+}
+
+#modal-text {
+  font-family: VTS-light;
+  font-style: normal;
+  font-weight: lighter;
+  font-size: max(1.15vw, 12px);
+  color: #FFFFFF;
+  white-space: pre-wrap;
+}
+
+#user-form > div > div > input {
+  background: #010042;
+  border: 2px solid #FFFFFF !important;
+  border-radius: 0px;
+  height: max(4vw, 40px);
+}
+
+#user-form > div > div > textarea {
+  background: #010042;
+  border: 2px solid #FFFFFF !important;
+  border-radius: 0px;
+}
+
+#user-form > div > div > input[type="text"], textarea {
+  font-family: VTS;
+  color: #FFFFFF;
+  font-size: max(1.15vw, 15px);
 }
