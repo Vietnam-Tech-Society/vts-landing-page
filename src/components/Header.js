@@ -12,7 +12,7 @@ const Header = () => {
   return (
     <>
       <Navbar expand="lg" variant="dark" className="navbar-header" sticky="top">
-        <Navbar.Brand href="#home">
+        <Navbar.Brand href="/">
           <img src={logo} alt="logo" />
         </Navbar.Brand>
         <Navbar.Toggle style={{color: "white"}} aria-controls="basic-navbar-nav" />
