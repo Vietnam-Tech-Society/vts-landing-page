@@ -25,7 +25,7 @@ const Contact = () => {
             </Form.Group>
             <Form.Group as={Row}>
               <Col xs={12}>
-                <Form.Control type="text" as="textarea" rows={7} placeholder="Hi VTS, I would like to..." />
+                <Form.Control type="text" as="textarea" rows={7} placeholder="Hi VTS, I would like to..."  id="textarea" />
               </Col>
             </Form.Group>
             <Form.Group as={Row}>

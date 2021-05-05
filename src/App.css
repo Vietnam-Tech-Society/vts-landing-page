@@ -67,7 +67,7 @@
 }
 
 #subscribe-form {
-  margin-top: 30vh;
+  margin-top: 20vh;
   width: 100%;
 }
 
@@ -76,7 +76,13 @@
   border: 1px solid #FFFFFF;
   backdrop-filter: blur(1.39vw);
   height: 50px;
-  color: #ffffff;
+  color: #ffffff !important;
+  
+}
+
+::placeholder { /* Chrome, Firefox, Opera, Safari 10.1+ */
+  color: white;
+  opacity: 2;
 }
 
 #cta-button {
@@ -223,7 +229,7 @@
 
 input[type=email] {
   font-family: VTS;
-  font-size: 1.1vw;
+  font-size: max(1vw, 15px);
   color: #5401A1;
 }
 
@@ -403,7 +409,13 @@ input[type=email] {
   border-radius: 0px;
 }
 
-#user-form > div > div > input[type="text"], textarea {
+#user-form > div > div > input[type="text"] {
+  font-family: VTS;
+  color: #FFFFFF;
+  font-size: max(1.15vw, 15px);
+}
+
+#textarea {
   font-family: VTS;
   color: #FFFFFF;
   font-size: max(1.15vw, 15px);

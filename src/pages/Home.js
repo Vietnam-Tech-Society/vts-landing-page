@@ -37,7 +37,7 @@ const Home = () => {
           <Form style={{width: "100%"}}>
             <Form.Row >
               <Col xs={8} sm={{ span: 5, offset: 3 }}>
-                <Form.Control size="lg" type="email" placeholder="Email" id="cta" />
+                <Form.Control size="lg" type="email" placeholder="Email" id="cta" style={{ color: "white" }} />
               </Col>
               <Col xs={4} sm={2}>
                 <Button size="lg" id="cta-button">Subscribe</Button>
@@ -47,7 +47,7 @@ const Home = () => {
         </Col>
       </Row>
       {/* <Image src={why} fluid style={{ position: 'absolute', left: "0", right: "0", width: "100vw", marginTop: "60vw"}} /> */}
-      <Row style={{marginTop: "20vh"}}>
+      <Row style={{marginTop: "30vh"}}>
         <Container>
           <Row>
             <Col style={{ textAlign: "center" }}>
