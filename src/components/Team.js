@@ -1,10 +1,24 @@
-import React, { useState } from "react";
+import React, { useState, useEffect } from "react";
 import { Image } from 'react-bootstrap';
 import MemberModal from "./MemberModal";
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import { faChevronDown, faChevronUp } from '@fortawesome/free-solid-svg-icons';
+import { Collapse } from "react-collapse";
 
 const Team = () => {
   const [show, setShow] = useState(false);
   const [curr, setCurr] = useState(null);
+  const [isDesktop, setDesktop] = useState(window.innerWidth > 600);
+  const [open, setOpen] = useState(false);
+
+  const updateMedia = () => {
+    setDesktop(window.innerWidth > 600);
+  };
+
+  useEffect(() => {
+    window.addEventListener("resize", updateMedia);
+    return () => window.removeEventListener("resize", updateMedia);
+  });
   
   const handleClose = () => {
     setCurr(null);
@@ -15,6 +29,8 @@ const Team = () => {
     setCurr(id);
     setShow(true);
   }
+
+  
 
   const teamInfo = [
     {
@@ -156,16 +172,6 @@ const Team = () => {
       'Nhu wishes to build VTS into a strong community for the Vietnamese in tech.'
     },
     {
-      name: "Duy Hoang",
-      pos: "Product Manager",
-      url: require("../assets/img/duy.png"),
-      linkedin: "https://www.linkedin.com/in/duy-hoang/",
-      statement: ' Duy is pursuing a Bachelor’s degree in Computer Science from Drexel University. ' + 
-      'He sounds like a romantic in tech claiming to use tech to spread love in the world. Duy considers ' + 
-      'VTS as his stomping ground where everyone has each other’s back. \n \n This is also what he expects ' + 
-      'VTS to become: a community in which people are supported, their talents are nourished, and their impacts are magnified.'
-    },
-    {
       name: "Linh Dang",
       pos: "Product Manager",
       url: require("../assets/img/linh.png"),
@@ -203,17 +209,38 @@ const Team = () => {
     <>
       <div className="team-container">
         <div className="team-row-container">
-          {teamInfo.map((member, index) => {
-            return (
-              <div className="team-img-container" onClick={() => handleShow(index)}>
-                <Image className="team-img" src={member.url.default} alt="avatar" />
-                <div className="after">
-                  <div className="name">{member.name}</div>
-                  <div className="role">{member.pos}</div>
+          {!isDesktop ?
+            <Collapse isOpened={open}>
+              {teamInfo.map((member, index) => {
+                return (
+                  <div key={index} className="team-img-container" onClick={() => handleShow(index)}>
+                    <Image className="team-img" src={member.url.default} alt="avatar" />
+                    <div className="after">
+                      <div className="name">{member.name}</div>
+                      <div className="role">{member.pos}</div>
+                    </div>
+                  </div>
+                );
+              })} 
+            </Collapse> :
+            teamInfo.map((member, index) => {
+              return (
+                <div key={index} className="team-img-container" onClick={() => handleShow(index)}>
+                  <Image className="team-img" src={member.url.default} alt="avatar" />
+                  <div className="after">
+                    <div className="name">{member.name}</div>
+                    <div className="role">{member.pos}</div>
+                  </div>
                 </div>
-              </div>
-            );
-          })}
+              );
+            })
+          }
+          {!isDesktop ?
+            !open ?
+            <div style={{width: "100%"}} onClick={() => setOpen(!open)}><FontAwesomeIcon style={{ color: "white" }} icon={faChevronDown}  /></div> : 
+            <div style={{width: "100%"}} onClick={() => setOpen(!open)}><FontAwesomeIcon style={{ color: "white" }} icon={faChevronUp} onClick={() => setOpen(!open)} /></div> :
+            null
+          }
         </div>
       </div>
 

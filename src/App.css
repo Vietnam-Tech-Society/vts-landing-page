@@ -38,15 +38,12 @@
 }
 
 #small-text {
-  padding-left: max(4vw, 20px);
-  padding-right: max(4vw, 20px);
   font-family: VTS;
   font-style: normal;
   font-weight: normal;
-  font-size: max(2vw, 15px);
-
+  font-size: max(2vw, 20px);
   color: #FFFFFF;
-  margin-bottom: 4vh;
+  margin-bottom: min(4vh, 15px);
 }
 
 #main-container {
@@ -291,6 +288,7 @@ input[type=email] {
   display: grid;
   grid-gap: 1rem;
   justify-content: center;
+  text-align: center;
 }
 
 @media (min-width: 600px) {
@@ -305,6 +303,12 @@ input[type=email] {
   position: relative;
   width: max(17vw, 200px);
   height: max(17vw, 200px);
+}
+
+@media (max-width: 576px) {
+  .team-img-container {
+    margin-bottom: 1rem;
+  }
 }
 
 .team-img-container .after {
@@ -419,4 +423,11 @@ input[type=email] {
   font-family: VTS;
   color: #FFFFFF;
   font-size: max(1.15vw, 15px);
+}
+
+.collapse-button-container {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  margin: 5px 0px;
 }
