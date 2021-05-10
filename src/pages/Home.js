@@ -11,11 +11,8 @@ import Team from "../components/Team";
 import CollapsibleText from "../components/CollapsibleText";
 
 const Home = () => {
-  //const [open, setOpen] = useState(false);
-
   return (
     <Container style={{ minHeight: "100vh"}}>
-      {/* <img src={map} alt="" style={{ position: 'absolute', width: "75wh"}} /> */}
       <Image src={map} fluid style={{ position: 'absolute', left: "0" }} />
       <Image src={group} fluid style={{ position: 'absolute', left: "0", marginTop: "8vw", width: "100vw" }} />
       <Image src={gradient} fluid style={{ position: "absolute", left: "0", marginTop: "24vw", width: "100vw", right: "0" }} />
@@ -30,30 +27,6 @@ const Home = () => {
         </Col>
       </Row>
       
-      <Row style={{marginTop: "20vh"}}>
-        <Container>
-          <Row>
-            <Col style={{ textAlign: "center" }}>
-              <div id="small-text">
-                Who we are
-              </div>
-              <CollapsibleText>
-                <div id="why-text">
-                  Vietnam Tech Society (VTS) is a non-profit organization aiming to be a representation of the Vietnamese tech community in the U.S.
-                </div>
-              </CollapsibleText>
-              <div id="small-text" style={{ marginTop: "10px" }}>
-                Why Vietnam Tech Society
-              </div>
-              <CollapsibleText>
-                <div id="why-text">
-                  Vietnam Tech Society (VTS) is established to address the under-representation of Vietnamese in the tech industry.
-                </div>
-              </CollapsibleText>
-            </Col>
-          </Row>
-        </Container>
-      </Row>
       <Row style={{marginTop: "20vh" }}>
         <Col>
           <div id="big-text" style={{ textShadow: "none", textAlign: "left" }}>
@@ -110,7 +83,7 @@ const Home = () => {
       <Row style={{ marginTop: "20vh"}}>
         <Col>
           <div id="big-text" style={{ textShadow: "none", textAlign: "left" }}>
-            Our logo
+            Core Values
           </div>
         </Col>
       </Row>
