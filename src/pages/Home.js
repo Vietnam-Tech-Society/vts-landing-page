@@ -1,4 +1,4 @@
-import React, { useState, useEffect } from 'react';
+import React from 'react';
 import { Col, Container, Row, Image } from 'react-bootstrap';
 import map from "../assets/img/map.png";
 import group from "../assets/img/group.png";
