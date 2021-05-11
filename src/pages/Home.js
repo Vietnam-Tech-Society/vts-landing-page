@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useEffect } from 'react';
 import { Col, Container, Row, Image } from 'react-bootstrap';
 import map from "../assets/img/map.png";
 import group from "../assets/img/group.png";
@@ -9,8 +9,13 @@ import grow from "../assets/img/grow.png";
 import guid from "../assets/img/guid.png";
 import Team from "../components/Team";
 import CollapsibleText from "../components/CollapsibleText";
+import { GApageView } from "../util/Track";
 
 const Home = () => {
+  useEffect(() => {
+    GApageView("landing");
+  }, [])
+
   return (
     <Container style={{ minHeight: "100vh"}}>
       <Image src={map} fluid style={{ position: 'absolute', left: "0" }} />

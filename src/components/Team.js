@@ -83,9 +83,7 @@ const Team = () => {
       url: require("../assets/img/anh.png"),
       linkedin: "https://www.linkedin.com/in/anhletran",
       statement: 'Ever since his childhood, Anh has dreamed of building products that improve ' + 
-      'the human’s standard of living, and the tech industry helps him materialize that. Earning ' + 
-      'both his Bachelor\'s and Master\'s degrees in Electrical and Computer Engineering from ' + 
-      'Worcester Polytechnic Institute, he is now a lead software engineer at MathWorks. \n \n' + 
+      'the human’s standard of living, and the tech industry helps him materialize that. \n \n' + 
       'VTS to Anh is where Vietnamese in tech can acquire necessary skill sets and meaningful ' + 
       'connections to thrive in the tech era. As Product team\'s leader, Anh promises to help ' + 
       'tech enthusiasts land their dream tech jobs and develop their careers in the field.'
