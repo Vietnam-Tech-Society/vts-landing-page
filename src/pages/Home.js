@@ -9,12 +9,8 @@ import grow from "../assets/img/grow.png";
 import guid from "../assets/img/guid.png";
 import Team from "../components/Team";
 import CollapsibleText from "../components/CollapsibleText";
-import { GApageView } from "../util/Track";
 
 const Home = () => {
-  useEffect(() => {
-    GApageView("landing");
-  }, [])
 
   return (
     <Container style={{ minHeight: "100vh"}}>
