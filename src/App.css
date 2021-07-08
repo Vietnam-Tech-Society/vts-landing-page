@@ -8,20 +8,21 @@
 }
 
 .App {
-  background-color: #010042;
   min-height: 100vh;
 }
 
 .navbar-header {
   font-family: VTS;
-  font-weight: bold;
-  font-size: max(1.4vw, 20px);
+  font-weight: bold;  
   padding-left: 10% !important;
   padding-right: 10% !important;
-  justify-content: space-between;
-  margin-bottom: 20px;
-  background: rgba(1, 0, 66, 0.582) !important;
-  backdrop-filter: blur(3.47vw);
+  font-size: max(1.3vw, 18px);
+  white-space: nowrap;
+  background-color: #010042;
+}
+
+.navbar-header img {
+  width: 20%;
 }
 
 .center {

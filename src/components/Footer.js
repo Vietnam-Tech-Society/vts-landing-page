@@ -1,5 +1,5 @@
 import React from 'react';
-import bigLogo from "../assets/img/fulllogobig.png";
+import bigLogo from "../assets/img/Logo_lettermark_dark.svg";
 import fb from "../assets/img/fb.png";
 import li from "../assets/img/li.png";
 import { Container, Row, Col } from 'react-bootstrap';
