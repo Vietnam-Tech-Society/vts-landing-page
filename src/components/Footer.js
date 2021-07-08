@@ -2,25 +2,29 @@ import React from 'react';
 import bigLogo from "../assets/img/Logo_lettermark_dark.svg";
 import fb from "../assets/img/fb.png";
 import li from "../assets/img/li.png";
-import { Container, Row, Col } from 'react-bootstrap';
+import { Container, Row, Col, Nav, Navbar } from 'react-bootstrap';
 
 const Footer = () => {
   return (
     <div id="footer">
-      <Container>
+
+      <Container stick="bottom">
         <Row className="justify-content-center align-items-center">
-          <Col xs={12} sm={8} style={{ marginBottom: "20px"}}>
-            <img src={bigLogo} alt="" style={{ maxWidth: "80%", height: "auto" }} />
+          <Col xs={12} model={8} >
+            <img src={bigLogo} alt=""style={{ width: "12%", height: "auto" }} />
           </Col>
-          <Col xs={12} sm={4} style={{ marginBottom: "20px"}} className="flex-gap">
-            <a href="https://www.facebook.com/VietnamTechSociety">
-              <img src={fb} alt="fb" style={{ maxWidth: "100%", height: "auto" }} />
-            </a>
-            <a href="https://www.linkedin.com/company/vietnam-tech-society/">
-              <img src={li} alt="li" style={{ maxWidth: "100%", height: "auto" }} />
-            </a>
+          <Col xs={12} md={4} className="flex-gap">
           </Col>
         </Row> 
+
+        <Row>
+          <Col xs={12} md={6}>Copyright 2021 - Vietnam Tech Society</Col>
+          <Col xs={12} md={6} className="flex-gap">
+            <a href="/">Contact Us</a>
+            <a href="/">Privacy Policy</a>
+            <a href="/">Terms of Use</a>
+          </Col>
+        </Row>
       </Container>
     </div>
   );

@@ -1,0 +1,40 @@
+@font-face {
+    font-family: VTS;
+    src: url(../assets/font/brown.ttf);
+}
+
+@font-face {
+    font-family: VTS-light;
+    src: url(../assets/font/brown-light.ttf);
+}
+
+
+.text-container {
+    width: 80%;
+    margin: auto;
+    padding: 10vw 1px;
+    font-family: VTS;
+}
+
+
+.text-bold {
+    font-weight: 600;
+}
+
+.intro {
+    background-color: #FFE81C;
+    min-height: 50vh;
+}
+
+
+@media screen and (min-width: 576px) {
+    .big-font {
+        font-size: 5rem;
+    }
+    .text-container {
+        padding: 4vw 10vw;
+    }
+
+    
+}
+

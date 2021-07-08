@@ -6,9 +6,9 @@ const LightHeader = () => {
   return (
     <Navbar expand="lg" bg="light" className="navbar-header">
       <Navbar.Brand href="/">
-        <img src={logo} alt="logo" />
+        <img src={logo} alt="logo"/>
       </Navbar.Brand>
-      <Nav className="ml-auto">
+      <Nav className="mr-auto">
         <Nav.Link href="#home">Home</Nav.Link>
         <Nav.Link href="#product">Product</Nav.Link>
         <Nav.Link href="#about">About Us</Nav.Link>

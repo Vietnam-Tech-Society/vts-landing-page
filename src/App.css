@@ -22,7 +22,7 @@
 }
 
 .navbar-header img {
-  width: 20%;
+  width: 25%;
 }
 
 .center {
@@ -171,17 +171,25 @@
   width: 100%;
 }
 
+
 #footer {
-  margin-top: 10vh;
-  background: #010042;
-  box-shadow: 0px -2.78vw 5.56vw rgba(84, 1, 161, 0.37);
-  padding: 10vh 0px;
+  position: relative;
+  padding: 30px 5px;
+  background: #EEEEEE;
+  font-family: VTS;
+  font-weight: bold;  
+  font-size: max(1vw, 10px);
+  white-space: nowrap;
+  margin: auto;
 }
+
+
 
 .flex-gap {
   display: inline-flex;
   flex-wrap: wrap;
-  gap: 6vw;
+  gap: 2vw;
+  background-color: blue;
 }
 
 .sub-background {
@@ -293,7 +301,12 @@ input[type=email] {
 }
 
 @media (min-width: 600px) {
-  .team-row-container { grid-template-columns: repeat(3, 1fr); }
+  .team-row-container { grid-template-columns: repeat(3, 1fr); 
+  }
+  #footer {
+    font-size: max(1vw, 15px);
+  }
+
 }
 
 @media (min-width: 900px) {
