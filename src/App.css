@@ -189,7 +189,6 @@
   display: inline-flex;
   flex-wrap: wrap;
   gap: 2vw;
-  background-color: blue;
 }
 
 .sub-background {
@@ -300,8 +299,10 @@ input[type=email] {
   text-align: center;
 }
 
-@media (min-width: 600px) {
-  .team-row-container { grid-template-columns: repeat(3, 1fr); 
+.team-row-container { grid-template-columns: repeat(2, 1fr); }
+
+@media screen and (min-width: 600px) {
+  .team-row-container { grid-template-columns: repeat(2, 1fr); 
   }
   #footer {
     font-size: max(1vw, 15px);
@@ -309,9 +310,8 @@ input[type=email] {
 
 }
 
-@media (min-width: 900px) {
-  .team-row-container { grid-template-columns: repeat(4, 1fr); }
-}
+
+
 
 .team-img-container {
   position: relative;

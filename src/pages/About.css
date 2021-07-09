@@ -9,10 +9,9 @@
 }
 
 
-.text-container {
-    width: 80%;
+.text-container, .image-container {
+    width: 70%;
     margin: auto;
-    padding: 10vw 1px;
     font-family: VTS;
 }
 
@@ -21,20 +20,42 @@
     font-weight: 600;
 }
 
+.big-font {
+    font-size: 3rem;
+}
+
+.team-container {
+    width: 70%;
+    margin: auto;
+}
+
+
+.intro, .commitment, .establishment {
+    padding: 5vw 10vw;
+}
+
 .intro {
     background-color: #FFE81C;
-    min-height: 50vh;
+}
+
+.row-gap{
+    margin: 5vw 9vw;
 }
 
 
 @media screen and (min-width: 576px) {
     .big-font {
-        font-size: 5rem;
-    }
-    .text-container {
-        padding: 4vw 10vw;
+        font-size: 4rem;
     }
 
+    .text-container, .image-container {
+        width: 100%;
+        margin: 5vw 0vw;
+    }
+    
+    .row-gap{
+        margin: 0vw -1vw;
+    }
     
 }
 

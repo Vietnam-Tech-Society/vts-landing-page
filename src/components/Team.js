@@ -123,17 +123,6 @@ const Team = () => {
       'mentee who can bear powerful testimony to how VTS helps materialize any tech enthusiasts’ dream.'
     },
     {
-      name: "Anthony Vo",
-      pos: "Product Manager",
-      url: require("../assets/img/anthony.png"),
-      linkedin: "https://www.linkedin.com/in/anthonyhvo/",
-      statement: 'Anthony started his tech career as a Computer Science major student at Dickinson College. ' + 
-      'His specific fields of interest include Software Development (Full-stack), Machine Learning and ' + 
-      'Product Management. \n \n From Anthony’s perspective, VTS is a place where bright minds in tech ' + 
-      'gather to build products that matter. Along with his teammates, he aims to develop top-notch products ' + 
-      'for tech people which could take their skills and career to the next level.'
-    },
-    {
       name: "Caroline Le",
       pos: "Professional Network Manager",
       url: require("../assets/img/caroline.png"),
