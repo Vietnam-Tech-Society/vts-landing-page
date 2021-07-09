@@ -1,38 +1,9 @@
-import React, { useState, useEffect } from "react";
-import { Image } from 'react-bootstrap';
-import MemberModal from "./MemberModal";
-import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import { faChevronDown, faChevronUp } from '@fortawesome/free-solid-svg-icons';
-import { Collapse } from "react-collapse";
+import { Col, Row, Image, Container } from 'react-bootstrap'
 
-const Team = () => {
-  const [show, setShow] = useState(false);
-  const [curr, setCurr] = useState(null);
-  const [isDesktop, setDesktop] = useState(window.innerWidth > 600);
-  const [open, setOpen] = useState(false);
+const MemberGrid = () => {
 
-  const updateMedia = () => {
-    setDesktop(window.innerWidth > 600);
-  };
 
-  useEffect(() => {
-    window.addEventListener("resize", updateMedia);
-    return () => window.removeEventListener("resize", updateMedia);
-  });
-  
-  const handleClose = () => {
-    setCurr(null);
-    setShow(false);
-  }
-
-  const handleShow = (id) => {
-    setCurr(id);
-    setShow(true);
-  }
-
-  
-
-  const teamInfo = [
+const teamInfo = [
     {
       name: "Henry Le",
       pos: "Founder & CEO",
@@ -122,7 +93,6 @@ const Team = () => {
       'she considers VTS as where she belongs and derives inspiration. As a team member, she would also like to be a ' + 
       'mentee who can bear powerful testimony to how VTS helps materialize any tech enthusiasts’ dream.'
     },
-
     {
       name: "Caroline Le",
       pos: "Professional Network Manager",
@@ -191,60 +161,28 @@ const Team = () => {
       'can create content that helps bring tech closer to the public. \n \n Vy considers VTS a meaningful support network ' + 
       'for anyone interested in tech professions. That is why she would like to contribute as much as she can to the common goals.'
     }
-  ];
-
-  return (
-    <>
-      <div className="team-container">
-        <div className="team-row-container">
-          {!isDesktop ?
-            <Collapse isOpened={open}>
+];
+    return (
+        <div>
+            <Container>
+                <Row>
               {teamInfo.map((member, index) => {
                 return (
-                  <div key={index} className="team-img-container" onClick={() => handleShow(index)}>
+                    
+                  <Col xs={6} sm={3} key={index} className="team-img-container">
                     <Image className="team-img" src={member.url.default} alt="avatar" />
                     <div className="after">
                       <div className="name">{member.name}</div>
                       <div className="role">{member.pos}</div>
                     </div>
-                  </div>
+                  </Col>
+                  
                 );
               })} 
-            </Collapse> :
-            teamInfo.map((member, index) => {
-              return (
-                <div key={index} className="team-img-container" onClick={() => handleShow(index)}>
-                  <Image className="team-img" src={member.url.default} alt="avatar" />
-                  <div className="after">
-                    <div className="name">{member.name}</div>
-                    <div className="role">{member.pos}</div>
-                  </div>
-                </div>
-              );
-            })
-          }
-          {!isDesktop ?
-            !open ?
-            <div style={{width: "100%"}} onClick={() => setOpen(!open)}><FontAwesomeIcon style={{ color: "white" }} icon={faChevronDown}  /></div> : 
-            <div style={{width: "100%"}} onClick={() => setOpen(!open)}><FontAwesomeIcon style={{ color: "white" }} icon={faChevronUp} onClick={() => setOpen(!open)} /></div> :
-            null
-          }
+              </Row>
+              </Container>
         </div>
-      </div>
+    )
 
-      {curr != null 
-      && 
-      <MemberModal 
-        img={teamInfo[curr].url} 
-        name={teamInfo[curr].name} 
-        pos={teamInfo[curr].pos}  
-        linkedin={teamInfo[curr].linkedin}
-        statement={teamInfo[curr].statement}
-        show={show}
-        handleClose={handleClose}
-      />}
-    </>
-  );
 }
-
-export default Team;
+export default MemberGrid

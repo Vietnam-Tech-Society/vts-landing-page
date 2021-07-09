@@ -291,7 +291,7 @@ input[type=email] {
 }
 
 .team-row-container {
-  max-width: 1200px;
+
   margin: 0 auto;
   display: grid;
   grid-gap: 1rem;
@@ -299,11 +299,17 @@ input[type=email] {
   text-align: center;
 }
 
-.team-row-container { grid-template-columns: repeat(2, 1fr); }
+
+
 
 @media screen and (min-width: 600px) {
-  .team-row-container { grid-template-columns: repeat(2, 1fr); 
+
+  .team-img-container {
+
+    width: max(5vw, 10px);
+  
   }
+  
   #footer {
     font-size: max(1vw, 15px);
   }
@@ -313,11 +319,6 @@ input[type=email] {
 
 
 
-.team-img-container {
-  position: relative;
-  width: max(17vw, 200px);
-  height: max(17vw, 200px);
-}
 
 @media (max-width: 576px) {
   .team-img-container {

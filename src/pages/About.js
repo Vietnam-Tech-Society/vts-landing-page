@@ -4,7 +4,8 @@ import LightHeader from "../components/LightHeader"
 import Footer from "../components/Footer"
 import './About.css'
 import placeholder from "../assets/img/placeholder.jpg"
-import Team from "../components/Team"
+import MemberGrid from "../components/MemberGrid"
+import MemberModal from '../components/MemberModal'
 
 const About = () => {
     return(
@@ -27,7 +28,7 @@ const About = () => {
                         </h4>
                     </Col>
                     <Col xs={12} sm={6}>                     
-                        <Image src={placeholder} alt="commitment" style={{ width: "100%", margin: "auto" }}/>
+                        <Image src={placeholder} alt="commitment" style={{ width: "100%", margin: "auto"}}/>
                     </Col>
                 </Row>
             </div>
@@ -44,10 +45,11 @@ const About = () => {
                     </Col>
                 </Row>
                 <div className="image-container">  
-                    <Image src={placeholder} alt="commitment" style={{ width: "100%", height: "50%", margin: "auto" }}/>
+                    <Image src={placeholder} alt="commitment" style={{ width: "100%", margin: "auto" }}/>
                 </div>
             </div>
-            <Team></Team>
+
+            <MemberGrid></MemberGrid>
             <Footer></Footer>
         </div>
     )
