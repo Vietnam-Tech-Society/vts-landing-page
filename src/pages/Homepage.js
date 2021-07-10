@@ -8,7 +8,7 @@ import './Homepage.css'
 
 const Homepage = () => {
     return(
-        <div>
+        <div className="homepage">
             <div className="header">
                 <img className="image1" src={headerimage}></img>
                 <DarkHeader></DarkHeader>
@@ -17,7 +17,7 @@ const Homepage = () => {
                     <h5 className="header-subtitle"> A community for Vietnamese tech enthusiasts to share expertise, make meaningful connections, and support each other.</h5>
                 </div>
 
-                <img className="image2" src={placeholder} style={{width: "50%"}} alt=""></img>
+                <img className="image2" src={placeholder} alt=""></img>
                 <div className="absolute-break"></div>
             </div>
             <div className="header"></div>

@@ -1,6 +1,8 @@
-body {
+.homepage {
     min-height: 80vh;
     font-family: VTS;
+    color: white;
+    
 }
 
 .header {
@@ -8,19 +10,6 @@ body {
     top: 0;
     left: 0;
     height: 100vh;
-}
-
-.header-title {
-    font-weight: 700;
-    font-size: 4rem;
-}
-
-.header-text{
-    background-color: red;
-    width: 80%;
-    position: absolute;
-    top: 25%;
-    left: 10%;
 }
 
 .image1 {
@@ -31,13 +20,61 @@ body {
     height: 600px; 
     object-fit: cover; 
     object-position: 100%;
-
-
 }
 
 .image2 {
     position: absolute;
-    top: 90%;
-    left: 25%;
+    top: 70%;
+    left: 10%;
+    width: 80%;
 }
 
+.header-title {
+    font-weight: 900;
+    font-size: 4rem;
+}
+
+.header-text{
+    width: 70%;
+    position: absolute;
+    top: 25%;
+    left: 15%;
+   
+}
+
+
+@media screen and (min-width: 576px) {    
+    .header-title {
+        font-size: 2.5rem;
+    }
+    .header-text{
+        top: 30%;
+        width: 80%;
+        text-align: center;
+        left: 10%;
+    }
+    .image2 {
+        top: 60%;
+    }
+
+
+}
+
+@media screen and (min-width: 768px) {
+    .header-title {
+        font-size: 3.5rem;
+    }
+}
+
+@media screen and (min-width: 992px) {
+    .header-title {
+        font-size: 4.5rem;
+    }
+    .header-text{
+        top: 25%;
+    }
+    .image2 {
+        left: 20%;
+        width: 60%;
+    }
+}
