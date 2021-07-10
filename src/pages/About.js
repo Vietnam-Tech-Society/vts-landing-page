@@ -5,7 +5,7 @@ import Footer from "../components/Footer"
 import './About.css'
 import placeholder from "../assets/img/placeholder.jpg"
 import MemberGrid from "../components/MemberGrid"
-import MemberModal from '../components/MemberModal'
+
 
 const About = () => {
     return(

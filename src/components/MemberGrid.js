@@ -163,24 +163,24 @@ const teamInfo = [
     }
 ];
     return (
-        <div>
+        <div  className="team-container">
             <Container>
                 <Row>
-              {teamInfo.map((member, index) => {
-                return (
+                {teamInfo.map((member, index) => {
+                  return (
+                    <Col xs={6} md={3} key={index} className="team-img-container">
+                      <Image className="team-img" src={member.url.default} alt="avatar" />
+                      <div className="team-description">
+                        <div className="name">{member.name}</div>
+                        <div className="role">{member.pos}</div>
+                      </div>
+                    </Col>
                     
-                  <Col xs={6} sm={3} key={index} className="team-img-container">
-                    <Image className="team-img" src={member.url.default} alt="avatar" />
-                    <div className="after">
-                      <div className="name">{member.name}</div>
-                      <div className="role">{member.pos}</div>
-                    </div>
-                  </Col>
-                  
-                );
-              })} 
-              </Row>
+                  );
+                })} 
+                </Row>
               </Container>
+              
         </div>
     )
 

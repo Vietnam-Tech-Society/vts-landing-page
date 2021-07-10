@@ -284,89 +284,31 @@ input[type=email] {
 }
 
 .team-container {
-  margin-top: 2vh;
-  padding-left: 15px !important;
-  padding-right: 15px !important;
-  
-}
-
-.team-row-container {
-
-  margin: 0 auto;
-  display: grid;
-  grid-gap: 1rem;
-  justify-content: center;
-  text-align: center;
+  width: 80%;
+  margin: auto;
 }
 
 
-
+.team-img-container, .team-img, .team-description {
+  width: 100%;
+  margin-bottom: 1vw;
+  font-family: VTS;
+}
 
 @media screen and (min-width: 600px) {
-
-  .team-img-container {
-
-    width: max(5vw, 10px);
-  
-  }
-  
   #footer {
     font-size: max(1vw, 15px);
   }
 
 }
 
-
-
-
-
-@media (max-width: 576px) {
-  .team-img-container {
-    margin-bottom: 1rem;
-  }
-}
-
-.team-img-container .after {
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  display: none;
-  color: #FFF;
-}
-
-.team-img-container:hover .after {
-  display: block;
-  background: rgba(83, 0, 161, 0.76);
-}
-
-.team-img {
-  width: 100%;
-  height: 100%;
-}
-
 .name {
-  margin-top: 5.5vw;
-  text-align: center;
-  font-family: VTS;
-  font-style: normal;
   font-weight: bold;
-  font-size: max(2vw, 20px);
-  color: #FFFFFF;
+  font-size: 2vw;
 }
 
 .role {
-  margin-top: 0.69vw;
-
-  font-family: VTS-light;
-  font-style: normal;
-  font-weight: lighter;
-  font-size: 1.25vw;
-
-  text-align: center;
-
-  color: #FFFFFF;
+  font-size: 1.5vw;
 }
 
 .custom-member-modal {
