@@ -1,0 +1,12 @@
+.navbar-header {
+    font-family: VTS;
+    font-weight: bold;  
+    padding-left: 10% !important;
+    padding-right: 10% !important;
+    font-size: max(1.3vw, 18px);
+    white-space: nowrap;
+  }
+  
+  .navbar-header img {
+    width: 25%;
+  }

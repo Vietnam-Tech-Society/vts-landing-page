@@ -1,6 +1,7 @@
 import React from "react";
 import { Navbar, Nav } from 'react-bootstrap';
 import logo from "../assets/img/Logo_full_dark.svg"
+import './Header.css'
 
 const LightHeader = () => {
   return (

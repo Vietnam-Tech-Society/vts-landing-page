@@ -3,13 +3,14 @@ import bigLogo from "../assets/img/Logo_lettermark_dark.svg";
 import fb from "../assets/img/fb.png";
 import li from "../assets/img/li.png";
 import { Container, Row, Col, Nav, Navbar } from 'react-bootstrap';
+import './Footer.css'
 
 const Footer = () => {
   return (
     <div id="footer">
 
       <Container stick="bottom">
-        <Row className="justify-content-center align-items-center">
+        <Row >
           <Col xs={12} model={8} >
             <img src={bigLogo} alt=""style={{ width: "12%", height: "auto" }} />
           </Col>

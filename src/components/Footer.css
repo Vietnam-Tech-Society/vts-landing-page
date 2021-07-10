@@ -1,0 +1,19 @@
+#footer {
+    position: relative;
+    padding: 30px 5px;
+    background: #EEEEEE;
+    font-family: VTS;
+    font-weight: bold;  
+    font-size: max(1vw, 10px);
+    white-space: nowrap;
+    margin: auto;
+}
+  
+  
+  
+.flex-gap {
+    display: inline-flex;
+    flex-wrap: wrap;
+    gap: 2vw;
+}
+  

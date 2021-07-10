@@ -11,19 +11,7 @@
   min-height: 100vh;
 }
 
-.navbar-header {
-  font-family: VTS;
-  font-weight: bold;  
-  padding-left: 10% !important;
-  padding-right: 10% !important;
-  font-size: max(1.3vw, 18px);
-  white-space: nowrap;
-  background-color: #010042;
-}
 
-.navbar-header img {
-  width: 25%;
-}
 
 .center {
   display: block;
@@ -172,24 +160,6 @@
 }
 
 
-#footer {
-  position: relative;
-  padding: 30px 5px;
-  background: #EEEEEE;
-  font-family: VTS;
-  font-weight: bold;  
-  font-size: max(1vw, 10px);
-  white-space: nowrap;
-  margin: auto;
-}
-
-
-
-.flex-gap {
-  display: inline-flex;
-  flex-wrap: wrap;
-  gap: 2vw;
-}
 
 .sub-background {
   background-image: url(./assets/img/why.png);
@@ -283,33 +253,7 @@ input[type=email] {
   color: #FFFFFF;
 }
 
-.team-container {
-  width: 80%;
-  margin: auto;
-}
 
-
-.team-img-container, .team-img, .team-description {
-  width: 100%;
-  margin-bottom: 1vw;
-  font-family: VTS;
-}
-
-@media screen and (min-width: 600px) {
-  #footer {
-    font-size: max(1vw, 15px);
-  }
-
-}
-
-.name {
-  font-weight: bold;
-  font-size: 2vw;
-}
-
-.role {
-  font-size: 1.5vw;
-}
 
 .custom-member-modal {
   background-color: #5300A1 !important;

@@ -1,4 +1,5 @@
 import { Col, Row, Image, Container } from 'react-bootstrap'
+import './MemberGrid.css'
 
 const MemberGrid = () => {
 

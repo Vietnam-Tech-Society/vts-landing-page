@@ -1,10 +1,11 @@
 import React from "react";
 import { Navbar, Nav } from 'react-bootstrap';
 import logo from "../assets/img/Logo_full_light.svg"
+import './Header.css'
 
 const DarkHeader = () => {
   return (
-    <Navbar expand="lg" variant="dark" className="navbar-header">
+    <Navbar expand="lg" variant="dark" className="navbar-header" fixed="top" >
       <Navbar.Brand href="/">
         <img src={logo} alt="logo" />
       </Navbar.Brand>
