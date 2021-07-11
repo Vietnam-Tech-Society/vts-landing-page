@@ -1,17 +1,12 @@
 import React from 'react'
 import { Col, Row, Image } from 'react-bootstrap'
-import LightHeader from "../components/LightHeader"
-import Footer from "../components/Footer"
 import './About.css'
-import placeholder from "../assets/img/placeholder.jpg"
-import MemberGrid from "../components/MemberGrid"
-
+import placeholder from "../../assets/img/placeholder.jpg"
+import { MemberGrid } from "../../components/MemberGrid"
 
 const About = () => {
     return(
-        <div>
-            <LightHeader></LightHeader>
-
+        <>
             <div className="intro">
                     <h1 className="text-container big-font text-bold"> Placeholder Text </h1>
                     <h3 className="text-container text-bold">
@@ -50,9 +45,8 @@ const About = () => {
             </div>
 
             <MemberGrid></MemberGrid>
-            <Footer></Footer>
-        </div>
+        </>
     )
-}
+};
 
-export default About
+export default About;

@@ -1,11 +1,11 @@
 @font-face {
     font-family: VTS;
-    src: url(../assets/font/brown.ttf);
+    src: url(../../assets/font/brown.ttf);
 }
 
 @font-face {
     font-family: VTS-light;
-    src: url(../assets/font/brown-light.ttf);
+    src: url(../../assets/font/brown-light.ttf);
 }
 
 
@@ -14,8 +14,6 @@
     margin: auto;
     font-family: VTS;
 }
-
-
 
 .text-bold {
     font-weight: 600;
@@ -52,6 +50,5 @@
     .row-gap{
         margin: 0vw -1vw;
     }
-    
 }
 

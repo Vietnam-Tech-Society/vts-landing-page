@@ -1,10 +1,27 @@
-import { Col, Row, Image, Container } from 'react-bootstrap'
-import './MemberGrid.css'
+export const mentorArray = [
+    {
+      title: "Henry Le",
+      subtitle: "PlaceHolder",
+      icon: require("../assets/img/henry.png"),
+    },
+    {
+        title: "Henry Le",
+        subtitle: "PlaceHolder",
+        icon: require("../assets/img/henry.png"),
+    },
+    {
+        title: "Henry Le",
+        subtitle: "PlaceHolder",
+        icon: require("../assets/img/henry.png"),
+    },
+    {
+        title: "Henry Le",
+        subtitle: "PlaceHolder",
+        icon: require("../assets/img/henry.png"),
+    }
+]
 
-const MemberGrid = () => {
-
-
-const teamInfo = [
+export const teamInfo = [
     {
       name: "Henry Le",
       pos: "Founder & CEO",
@@ -163,27 +180,3 @@ const teamInfo = [
       'for anyone interested in tech professions. That is why she would like to contribute as much as she can to the common goals.'
     }
 ];
-    return (
-        <div  className="team-container">
-            <Container>
-                <Row>
-                {teamInfo.map((member, index) => {
-                  return (
-                    <Col xs={6} md={3} key={index} className="team-img-container">
-                      <Image className="team-img" src={member.url.default} alt="avatar" />
-                      <div className="team-description">
-                        <div className="name">{member.name}</div>
-                        <div className="role">{member.pos}</div>
-                      </div>
-                    </Col>
-                    
-                  );
-                })} 
-                </Row>
-              </Container>
-              
-        </div>
-    )
-
-}
-export default MemberGrid

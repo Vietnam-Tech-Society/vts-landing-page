@@ -1,8 +1,8 @@
 import React from 'react';
-import bigLogo from "../assets/img/Logo_lettermark_dark.svg";
-import fb from "../assets/img/fb.png";
-import li from "../assets/img/li.png";
-import { Container, Row, Col, Nav, Navbar } from 'react-bootstrap';
+import bigLogo from "../../assets/img/Logo_lettermark_dark.svg";
+/* import fb from "../../assets/img/fb.png";
+import li from "../assets/img/li.png"; */
+import { Container, Row, Col } from 'react-bootstrap';
 import './Footer.css'
 
 const Footer = () => {
@@ -20,10 +20,12 @@ const Footer = () => {
 
         <Row>
           <Col xs={12} md={6}>Copyright 2021 - Vietnam Tech Society</Col>
-          <Col xs={12} md={6} className="flex-gap">
-            <a href="/">Contact Us</a>
-            <a href="/">Privacy Policy</a>
-            <a href="/">Terms of Use</a>
+          <Col xs={12} md={6}>
+            <div className="flex-gap" style={{ float: 'right' }}>
+              <a href="/">Contact Us</a>
+              <a href="/">Privacy Policy</a>
+              <a href="/">Terms of Use</a>
+            </div>
           </Col>
         </Row>
       </Container>

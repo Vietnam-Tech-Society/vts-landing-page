@@ -1,9 +1,9 @@
 import React, { useEffect } from 'react';
 import './App.css';
-import Product from "./pages/Product"
-import Homepage from "./pages/Homepage";
-import About from "./pages/About"
 import { initGA, GApageView } from "./util/Track";
+import { Header } from './components/Header';
+import Routes from './Routes';
+import { Footer } from './components/Footer';
 
 function App() {
   useEffect(() => {
@@ -13,11 +13,9 @@ function App() {
 
   return (
     <div className="App">
-      <Product />
-      <Homepage/>
-
-      <About />
-
+      <Header mode='light' />
+      <Routes />
+      <Footer />
     </div>
   );
 }
