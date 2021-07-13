@@ -7,16 +7,19 @@ import './Header.css'
 
 const Header = ({ mode }) => {
   return (
-    <Navbar expand="lg" bg="light" className="navbar-header" fixed="top">
+    <Navbar expand="lg" bg="light" variant="light" className="navbar-header" sticky="top">
       <Navbar.Brand href="/">
         <img src={mode === "dark" ? lightLogo : darkLogo} alt="logo"/>
       </Navbar.Brand>
-      <Nav className="ml-auto">
-        <Nav.Link href="/">Home</Nav.Link>
-        <Nav.Link href="/product">Product</Nav.Link>
-        <Nav.Link href="/about">About Us</Nav.Link>
-        <Nav.Link href="/blog">Blog</Nav.Link>
-      </Nav>
+      <Navbar.Toggle aria-controls="responsive-navbar-nav" className="ml-auto" />
+      <Navbar.Collapse id="responsive-navbar-nav">
+        <Nav>
+          <Nav.Link href="/">Home</Nav.Link>
+          <Nav.Link href="/product">Product</Nav.Link>
+          <Nav.Link href="/about">About Us</Nav.Link>
+          <Nav.Link href="/blog">Blog</Nav.Link>
+        </Nav>
+      </Navbar.Collapse>
     </Navbar>
   );
 }
