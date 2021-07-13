@@ -9,11 +9,11 @@ const Header = ({ mode }) => {
   return (
     <Navbar expand="lg" bg="light" variant="light" className="navbar-header" sticky="top">
       <Navbar.Brand href="/">
-        <img src={mode === "dark" ? lightLogo : darkLogo} alt="logo"/>
+        <img src={mode === "dark" ? lightLogo : darkLogo} alt="logo" className="navbar-logo" />
       </Navbar.Brand>
-      <Navbar.Toggle aria-controls="responsive-navbar-nav" className="ml-auto" />
+      <Navbar.Toggle aria-controls="responsive-navbar-nav" />
       <Navbar.Collapse id="responsive-navbar-nav">
-        <Nav>
+        <Nav className="ml-auto">
           <Nav.Link href="/">Home</Nav.Link>
           <Nav.Link href="/product">Product</Nav.Link>
           <Nav.Link href="/about">About Us</Nav.Link>
