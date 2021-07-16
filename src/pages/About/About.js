@@ -3,10 +3,12 @@ import { Col, Row, Image } from 'react-bootstrap'
 import './About.css'
 import placeholder from "../../assets/img/placeholder.jpg"
 import { MemberGrid } from "../../components/MemberGrid"
+import subheader from "../../assets/img/subheader.png"
+import * as constants from '../../components/util/constants';
 
 const About = () => {
     return(
-        <>
+        <div className="about-page">
             <div className="intro">
                     <h1 className="text-container big-font text-bold"> Placeholder Text </h1>
                     <h3 className="text-container text-bold">
@@ -44,8 +46,40 @@ const About = () => {
                 </div>
             </div>
 
-            <MemberGrid></MemberGrid>
-        </>
+            <div className="subheader">
+            <Row>
+                <Col xs={6}>
+                    <p className="subheader-text"> Our Team</p>
+                </Col>
+                <Col xs={6}>                     
+                    <Image id="subheader-img" src={subheader} alt="subheader"  />
+                </Col>
+            </Row>
+            </div>
+            <MemberGrid array={constants.teamInfo} />
+
+            <div className="subheader">
+            <Row>
+                <Col xs={6}>
+                    <p className="subheader-text"> Our Mentors</p>
+                </Col>
+                <Col xs={6}>                     
+                    <Image id="subheader-img" src={subheader} alt="subheader"  />
+                </Col>
+            </Row>
+            </div>
+
+            <div className="subheader">
+            <Row>
+                <Col xs={6}>
+                    <p className="subheader-text"> Our Partners </p>
+                </Col>
+                <Col xs={6}>                     
+                    <Image id="subheader-img" src={subheader} alt="subheader"  />
+                </Col>
+            </Row>
+            </div>
+        </div>
     )
 };
 

@@ -2,22 +2,22 @@ export const mentorArray = [
     {
       title: "Henry Le",
       subtitle: "PlaceHolder",
-      icon: require("../assets/img/henry.png"),
+      icon: require("../../assets/img/henry.png"),
     },
     {
         title: "Henry Le",
         subtitle: "PlaceHolder",
-        icon: require("../assets/img/henry.png"),
+        icon: require("../../assets/img/henry.png"),
     },
     {
         title: "Henry Le",
         subtitle: "PlaceHolder",
-        icon: require("../assets/img/henry.png"),
+        icon: require("../../assets/img/henry.png"),
     },
     {
         title: "Henry Le",
         subtitle: "PlaceHolder",
-        icon: require("../assets/img/henry.png"),
+        icon: require("../../assets/img/henry.png"),
     }
 ]
 
@@ -25,7 +25,7 @@ export const teamInfo = [
     {
       name: "Henry Le",
       pos: "Founder & CEO",
-      url: require("../assets/img/henry.png"),
+      url: require("../../assets/img/henry.png"),
       linkedin: "https://www.linkedin.com/in/lethehien/",
       statement: '"I would like to build products that connect all the isolated Vietnamese techies.”' + 
       ' This galvanized him into founding VTS while working at Amazon and building his project Henry SQL simultaneously.\n \n' +  
@@ -35,7 +35,7 @@ export const teamInfo = [
     {
       name: "Nghi Truong",
       pos: "Chief of Growth",
-      url: require("../assets/img/nghi.png"),
+      url: require("../../assets/img/nghi.png"),
       linkedin: "https://www.linkedin.com/in/hainghi95/",
       statement: 'Nghi had coded for 8 years since she was 10 but did not pursue Computer Science. She has ' +
       'been working in tech since college graduation and is currently working for Zest AI as a Business Strategy & Analytics. \n \n' + 
@@ -45,7 +45,7 @@ export const teamInfo = [
     {
       name: "Phu Tran",
       pos: "Director of Marketing",
-      url: require("../assets/img/phu.png"),
+      url: '../../assets/img/phu.png',
       linkedin: "https://www.linkedin.com/in/phutran526/",
       statement: 'After his 1-year internship in Marketing, Phu continues to pursue his Bachelor\'s degree in ' + 
       'Marketing from Georgia State University. Being a business-technology enthusiast leads him to the decision ' + 
@@ -57,7 +57,7 @@ export const teamInfo = [
     {
       name: "Dung Nguyen",
       pos: "Director of Branding",
-      url: require("../assets/img/dung.png"),
+      url: require("../../assets/img/dung.png"),
       linkedin: "https://www.linkedin.com/in/dungdung/",
       statement: 'Graduating from Foreign Trade University (HCMC), Dung is working for VNG Corporation, ' + 
       'a leading tech company in Vietnam. She has witnessed how software engineers bring values to society, ' + 
@@ -69,7 +69,7 @@ export const teamInfo = [
     {
       name: "Anh Tran",
       pos: "Chief of Product",
-      url: require("../assets/img/anh.png"),
+      url: require("../../assets/img/anh.png"),
       linkedin: "https://www.linkedin.com/in/anhletran",
       statement: 'Ever since his childhood, Anh has dreamed of building products that improve ' + 
       'the human’s standard of living, and the tech industry helps him materialize that. \n \n' + 
@@ -80,7 +80,7 @@ export const teamInfo = [
     {
       name: "Kathy Nguyen",
       pos: "Operation Manager",
-      url: require("../assets/img/kathy.png"),
+      url: require("../../assets/img/kathy.png"),
       linkedin: "https://www.linkedin.com/in/kathy-han-nguyen/",
       statement: 'Being the youngest member of our team, Kathy’s current field of interest is ' + 
       'Data Science. What she finds engaging is that big data can tell different stories. VTS to ' + 
@@ -92,7 +92,7 @@ export const teamInfo = [
     {
       name: "Quan Luong",
       pos: "Director of Finance",
-      url: require("../assets/img/quan.png"),
+      url: require("../../assets/img/quan.png"),
       linkedin: "https://www.linkedin.com/in/quanluongthanh/",
       statement: 'Quan has a Bachelor’s degree in Business Administration (Accounting concentration) from University of Oklahoma. ' + 
       'His obsession with tech lies in the deployment of relevant software in finance. For the time being, he is teaching ' + 
@@ -103,7 +103,7 @@ export const teamInfo = [
     {
       name: "Quynh Nguyen",
       pos: "Content Creator",
-      url: require("../assets/img/quynh.png"),
+      url: require("../../assets/img/quynh.png"),
       linkedin: "https://www.linkedin.com/in/quynhnguyen26/",
       statement: 'Quynh entered tech after graduating from the University of Languages and International Studies (VNU). ' + 
       'She is pursuing her second Bachelor’s in Computer Science and Finance at Juniata College. Tech can fulfill her' + 
@@ -114,7 +114,7 @@ export const teamInfo = [
     {
       name: "Caroline Le",
       pos: "Professional Network Manager",
-      url: require("../assets/img/caroline.png"),
+      url: require("../../assets/img/caroline.png"),
       linkedin: "https://www.linkedin.com/in/carolinedungle/",
       statement: 'Caroline is pursuing a business degree from Drexel University, but her passion for technology ' + 
       'brought her to many roles in big tech corporations as Bose & SAP. She is passionate about combining ' + 
@@ -126,7 +126,7 @@ export const teamInfo = [
     {
       name: "Minh Pham",
       pos: "Professional Network Manager",
-      url: require("../assets/img/minh.png"),
+      url: require("../../assets/img/minh.png"),
       linkedin: "https://www.linkedin.com/in/minhqpham/",
       statement: ' Minh is a student at Case Western Reserve University & an incoming Software Engineering intern at Microsoft. ' + 
       'Not only is Computer Science his passion but Minh is also into creating impactful products to give back to the tech ' + 
@@ -138,7 +138,7 @@ export const teamInfo = [
     {
       name: "Nhu Nguyen",
       pos: "Graphic Designer",
-      url: require("../assets/img/nhu.png"),
+      url: require("../../assets/img/nhu.png"),
       linkedin: "https://www.linkedin.com/in/nhu-nguyen-3bab56188/",
       statement: 'Nhu’s major at the University of Architecture HCMC was Industrial Design. She first became ' + 
       'fascinated by tech when she discovered the cross between Art and Virtual Reality (VR) gives rise to a ' + 
@@ -150,7 +150,7 @@ export const teamInfo = [
     {
       name: "Linh Dang",
       pos: "Product Manager",
-      url: require("../assets/img/linh.png"),
+      url: require("../../assets/img/linh.png"),
       linkedin: "https://www.linkedin.com/in/linh-dang-18b5b2155/",
       statement: 'Linh is currently a Finance and Accounting Management student at Northeastern University. She ' + 
       'loves how technology grants the public access to specialized knowledge, services, and tools in unprecedented ' + 
@@ -161,7 +161,7 @@ export const teamInfo = [
     {
       name: "Anh Ngo",
       pos: "Professional Network Manager",
-      url: require("../assets/img/jason.png"),
+      url: require("../../assets/img/jason.png"),
       linkedin: "https://www.linkedin.com/in/anqngo/",
       statement: 'Anh Ngo majors in Computer Science & Math at Haverford College, and he will be a Software Engineer ' + 
       'at Bloomberg after graduation. Anh first entered tech thanks to the profuse possibilities it offers. Not until a ' + 
@@ -172,7 +172,7 @@ export const teamInfo = [
     {
       name: "Vy Le",
       pos: "Content Creator",
-      url: require("../assets/img/vy.png"),
+      url: require("../../assets/img/vy.png"),
       linkedin: "",
       statement: 'As a content creator, Vy is quite a big fan of tech thanks to its many applications making her job ' + 
       'and life easier. Seeing how tech has made dreams come true, Vy decided to look deeper into the field so that she ' + 
