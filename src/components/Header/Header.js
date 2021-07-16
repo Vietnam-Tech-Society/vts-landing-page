@@ -8,7 +8,7 @@ import './Header.css'
 const Header = ({ mode }) => {
   return (
     <Navbar expand="lg" bg="light" variant="light" className="navbar-header" sticky="top">
-      <Navbar.Brand href="/">
+      <Navbar.Brand className="logo-container" href="/">
         <img src={mode === "dark" ? lightLogo : darkLogo} alt="logo" className="navbar-logo" />
       </Navbar.Brand>
       <Navbar.Toggle aria-controls="responsive-navbar-nav" />

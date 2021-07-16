@@ -11,7 +11,7 @@ const Homepage = () => {
                 <img className="image1" src={headerimage} alt="logo"></img>
                 <div className="header-text">
                     <h1 className="header-title"> By techies, for techies </h1>
-                    <h5 className="header-subtitle"> A community for Vietnamese tech enthusiasts to share expertise, make meaningful connections, and support each other.</h5>
+                    <h5> A community for Vietnamese tech enthusiasts to share expertise, make meaningful connections, and support each other.</h5>
                 </div>
                 <img className="image2" src={placeholder} alt=""></img>
             </div>

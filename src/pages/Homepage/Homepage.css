@@ -7,8 +7,7 @@
     position: relative;
     top: 0;
     left: 0;
-    height: 125vh;
-    background-color: aqua;
+    height: 150vw;
     color: white;
 }
 
@@ -17,14 +16,14 @@
     top: 0;
     left: 0;
     width: 100%; 
-    height: 90vh; 
+    height: 125vw; 
     object-fit: cover; 
     object-position: 100%;
 }
 
 .image2 {
     position: absolute;
-    top: 70%;
+    top: 65%;
     left: 10%;
     width: 80%;
 
@@ -32,13 +31,14 @@
 
 .header-title {
     font-weight: 900;
-    font-size: 4rem;
+    font-size: 3.5rem;
+    margin-bottom: 5vh;
 }
 
 .header-text{
     width: 70%;
     position: absolute;
-    top: 25%;
+    top: 20%;
     left: 15%;
 }
 
@@ -75,12 +75,7 @@
     .header-title {
         font-size: 2.5rem;
     }
-    .header-text{
-        top: 30%;
-        width: 80%;
-        text-align: center;
-        left: 10%;
-    }
+
     .image2 {
         top: 60%;
         object-fit: cover; 
@@ -88,9 +83,20 @@
         height: 50vh;
     }
 
-
-
+    .header {
+        height: 120vw;
+    }
     
+    .image1 {
+        height: 95vw; 
+    }
+    .header-text{
+        top: 25%;
+        width: 80%;
+        text-align: center;
+        left: 10%;
+    }
+
     .row-gap{
         margin: 0vw -1vw;
     }
@@ -102,7 +108,7 @@
 
 @media screen and (min-width: 768px) {
     .header-title {
-        font-size: 3.5rem;
+        font-size: 3.25rem;
 
     }
 
@@ -110,6 +116,20 @@
         padding: 1vw 0vw;
     }
 
+    .header-text{
+        top: 15%;
+    }
+
+    .image1 {
+        height: 70vw;
+    }
+    .image2 {
+        top: 55%;
+ 
+    }
+    .header {
+        height: 90vw;
+    }
 }
 
 @media screen and (min-width: 992px) {
@@ -117,10 +137,11 @@
         font-size: 4.5rem;
     }
     .header-text{
-        top: 25%;
+        top: 15%;
     }
     .image2 {
         left: 20%;
+        top: 50%;
         width: 60%;
     }
     #image-est{
@@ -129,6 +150,33 @@
 
     .center-left {
         text-align: left;
+    }
+    .header {
+        height: 80vw;
+    }
+    
+    .image1 {
+        height: 55vw;
+    }
+}
+
+@media screen and (min-width: 1200px) {
+    .header-title {
+        font-size: 4.5rem;
+    }
+    .header-text{
+        top: 15%;
+    }
+    .image2 {
+        top: 55%;
+    }
+
+    .header {
+        height: 75vw;
+    }
+    
+    .image1 {
+        height: 55vw;
     }
 }
 
