@@ -68,6 +68,7 @@ const About = () => {
                 </Col>
             </Row>
             </div>
+            <MemberGrid array={constants.mentorInfo} />
 
             <div className="subheader">
             <Row>
@@ -79,6 +80,7 @@ const About = () => {
                 </Col>
             </Row>
             </div>
+            <MemberGrid array={constants.partnerInfo} />
         </div>
     )
 };

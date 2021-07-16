@@ -45,7 +45,7 @@ export const teamInfo = [
     {
       name: "Phu Tran",
       pos: "Director of Marketing",
-      url: '../../assets/img/phu.png',
+      url: require('../../assets/img/phu.png'),
       linkedin: "https://www.linkedin.com/in/phutran526/",
       statement: 'After his 1-year internship in Marketing, Phu continues to pursue his Bachelor\'s degree in ' + 
       'Marketing from Georgia State University. Being a business-technology enthusiast leads him to the decision ' + 
@@ -178,5 +178,83 @@ export const teamInfo = [
       'and life easier. Seeing how tech has made dreams come true, Vy decided to look deeper into the field so that she ' + 
       'can create content that helps bring tech closer to the public. \n \n Vy considers VTS a meaningful support network ' + 
       'for anyone interested in tech professions. That is why she would like to contribute as much as she can to the common goals.'
+    },
+    {
+      name: "Hien Le",
+      pos: "Chief of Marketing",
+      url: require("../../assets/img/hien_le.jpg")
+    },
+    {
+      name: "Tram Ky",
+      pos: "Chief of Design",
+      url: require("../../assets/img/tram_ky.jpeg")
+    },
+    {
+      name: "Leila Do",
+      pos: "Product Designer",
+      url: require("../../assets/img/leila_do.jpg")
+    },
+    {
+      name: "Tri Nguyen",
+      pos: "Software Engineer",
+      url: require("../../assets/img/tri_nguyen.jpg")
+    },
+    {
+      name: "Thang Nguyen",
+      pos: "Software Engineer",
+      url: require("../../assets/img/thang_nguyen.jpg")
+    },
+    {
+      name: "Vivian Luu",
+      pos: "Software Engineer",
+      url: require("../../assets/img/vivian_luu.jpg")
     }
 ];
+
+export const mentorInfo = [
+  {
+    name: "Henry Le",
+    pos: "Founder & CEO",
+    url: require("../../assets/img/henry.png"),
+  },
+  {
+    name: "Henry Le",
+    pos: "Founder & CEO",
+    url: require("../../assets/img/henry.png"),
+  },
+  {
+    name: "Henry Le",
+    pos: "Founder & CEO",
+    url: require("../../assets/img/henry.png"),
+  },
+  {
+    name: "Henry Le",
+    pos: "Founder & CEO",
+    url: require("../../assets/img/henry.png"),
+  }
+];
+
+
+export const partnerInfo = [
+  {
+    name: "Henry Le",
+    pos: "Founder & CEO",
+    url: require("../../assets/img/henry.png"),
+  },
+  {
+    name: "Henry Le",
+    pos: "Founder & CEO",
+    url: require("../../assets/img/henry.png"),
+  },
+  {
+    name: "Henry Le",
+    pos: "Founder & CEO",
+    url: require("../../assets/img/henry.png"),
+  },
+  {
+    name: "Henry Le",
+    pos: "Founder & CEO",
+    url: require("../../assets/img/henry.png"),
+  }
+];
+
