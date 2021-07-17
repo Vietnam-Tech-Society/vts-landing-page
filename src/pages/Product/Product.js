@@ -12,7 +12,7 @@ const Product = () => {
             <Col sm={12} lg={5} className="center">
               <h1 className="bold row-margin">Find, Book and Meet Mentors around the world </h1>
               <h5 className="row-margin" style={{marginTop:"4vw"}} >Get guidance and learn from over 2,261+ mentors in world-class companies with our global community.</h5>
-              <Button className="button row-margin farther ">Sign up for private beta testing &#62;</Button>
+              <Button style={{backgroundColor:"#14ffd8", padding:"10px", color: "#010042", fontWeight: "700", borderStyle: "hidden"}} className="row-margin farther">Sign up for private beta testing &#62;</Button>
             </Col>
             <Col sm={12} lg={7} className="img-container">
               <Image src={placeholder} id="img"/>
@@ -43,7 +43,7 @@ const Product = () => {
               <h2 className="bold row-margin">Be the first one to experience our product</h2>
             </Col>
             <Col xs={12} xl={4} className="center" >
-            <Button className="button row-margin closer">Sign up for private beta testing &#62;</Button>
+            <Button style={{backgroundColor:"#14ffd8", padding:"10px", color: "#010042", fontWeight: "700", borderStyle: "hidden"}} className="row-margin farther">Sign up for private beta testing &#62;</Button>
             </Col>
           </Row>
           

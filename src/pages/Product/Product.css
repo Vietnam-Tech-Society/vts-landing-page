@@ -12,15 +12,7 @@
     width: 100%;
 }
 
-.button{
-    background-color: #14ffd8;
-    color: #010042;
-    font-weight: 700;
-    padding: 10px;
-    border-radius: 5%;
-    border-style: hidden;
-    margin-top: -10vw;
-}
+
 
 .center{
     margin: auto;
