@@ -30,6 +30,30 @@ const Homepage = () => {
                 </Row>
             </div>
 
+
+            <div className="establishment">
+                <Row>
+                    <Col xs={12} lg={4} style={{height:"25vw"}} className="text-grid">
+                        <div style={{width: "70%", position: "absolute", top: "5%", left: "5%"}}> Placeholder Text </div>
+                    </Col>
+                    <Col xs={12} lg={4} style={{height:"15vw"}} className="text-grid">
+                        <div style={{width: "70%", position: "absolute", top: "85%", left: "5%"}}> Placeholder Text </div>
+                    </Col>
+                    <Col xs={12} lg={3} style={{height:"25vw"}} className="text-grid">
+                        <div style={{width: "70%", position: "absolute", top: "5%", left: "45%"}}> Placeholder Text </div>
+                    </Col>
+                    <Col xs={12} lg={4} style={{height:"15vw"}} className="text-grid">
+                        <div style={{width: "70%", position: "absolute", top: "85%", left: "5%"}}> Placeholder Text </div>
+                    </Col>
+                    <Col xs={12} lg={4} style={{height:"25vw"}} className="text-grid">
+                        <div style={{width: "70%", position: "absolute", top: "85%", left: "5%"}}> Placeholder Text </div>
+                    </Col>
+                    <Col xs={12} lg={3} style={{height:"15vw"}} className="text-grid">
+                        <div style={{width: "70%", position: "absolute", top: "85%", left: "45%"}}> Placeholder Text </div>
+                    </Col>
+                </Row>
+            </div>
+
             <div className="establishment">
                 <Row>
                     <Col xs={12} lg={6}>
