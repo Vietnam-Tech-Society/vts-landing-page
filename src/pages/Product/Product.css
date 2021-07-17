@@ -3,6 +3,15 @@
     margin: auto;
 }
 
+.img-container{
+    width: 100%;
+    margin: 5vw;
+}
+
+#img{
+    width: 100%;
+}
+
 .button{
     background-color: #14ffd8;
     color: #010042;
@@ -32,9 +41,17 @@
 .closer{
   margin-top: 2vw;  
 }
+
+.farther{
+    margin-top: 3vw;
+}
 @media screen and (min-width: 576px) {    
     .row-margin{
         margin: 10vw 3vw 3vw;
+    }
+
+    .img-container{
+        margin: 3vw;
     }
 
     .product-page {
@@ -47,11 +64,22 @@
 
 
 
+
+
+
 }
 
 @media screen and (min-width: 768px) {    
     .row-margin{
         margin: 0vw;
+    }
+
+    .img-container{
+        margin: 4vw 0vw;
+    }
+
+    .farther{
+        margin-top: 4vw;
     }
 
     .product-page {
