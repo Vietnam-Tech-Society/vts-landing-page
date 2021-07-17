@@ -3,6 +3,16 @@
     margin: auto;
 }
 
+.button{
+    background-color: #14ffd8;
+    color: #010042;
+    font-weight: 700;
+    padding: 10px;
+    border-radius: 5%;
+    border-style: hidden;
+    margin-top: -10vw;
+}
+
 .center{
     margin: auto;
 }
@@ -16,9 +26,12 @@
 }
 
 .row-margin{
-    margin: 15vw 5vw 8vw;
+    margin: 10vw 5vw 5vw;
 }
 
+.closer{
+  margin-top: 2vw;  
+}
 @media screen and (min-width: 576px) {    
     .row-margin{
         margin: 10vw 3vw 3vw;
@@ -27,7 +40,13 @@
     .product-page {
         width: 70%;
     }
-    
+
+    .closer{
+        margin-top: 2vw;  
+    }
+
+
+
 }
 
 @media screen and (min-width: 768px) {    
@@ -38,13 +57,27 @@
     .product-page {
         width: 90%;
     }
-    
+
+    .closer{
+        margin-top: 2vw;  
+    }
 }
 
 
 @media screen and (min-width: 992px) {    
-    .product-page {
-        width: 80%;
+
+    .closer{
+        margin-top: 2vw;  
     }
     
 }
+
+@media screen and (min-width: 1200px) {    
+    .closer{
+        margin-top: 0vw;  
+    }
+    
+}
+
+
+
