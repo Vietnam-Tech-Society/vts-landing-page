@@ -2,22 +2,22 @@ export const mentorArray = [
     {
       title: "Henry Le",
       subtitle: "PlaceHolder",
-      icon: require("../../assets/img/henry.png"),
+      url: require("../../assets/img/facebook.png"),
     },
     {
         title: "Henry Le",
         subtitle: "PlaceHolder",
-        icon: require("../../assets/img/henry.png"),
+        url: require("../../assets/img/facebook.png"),
     },
     {
         title: "Henry Le",
         subtitle: "PlaceHolder",
-        icon: require("../../assets/img/henry.png"),
+        url: require("../../assets/img/facebook.png"),
     },
     {
         title: "Henry Le",
         subtitle: "PlaceHolder",
-        icon: require("../../assets/img/henry.png"),
+        url: require("../../assets/img/facebook.png"),
     }
 ]
 

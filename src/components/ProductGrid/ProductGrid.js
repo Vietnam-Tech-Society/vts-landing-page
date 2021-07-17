@@ -1,16 +1,18 @@
 import React from 'react'
 import { Col, Container, Row, Image } from 'react-bootstrap'
+import './ProductGrid.css'
 /* import headerimage from "../assets/img/header.png"
 import placeholder from '../assets/img/placeholder.jpg' */
 
 const ProductGrid = ({ array }) => {
     return(
+        
         <Container>
           <Row>
             {array.map((product, index) => {
                 return (
-                    <Col xs={12} md={6} className="team-img-container">
-                        <Image className="product-img" src={product.icon} alt="icon" />
+                    <Col xs={12} md={6} key={index} className="product-img-container">
+                        <Image className="product-img" src={product.url.default} alt="icon" />
                         <div className="product-description">
                             <div className="title">{product.title}</div>
                             <div className="subtitle">{product.subtitle}</div>
@@ -20,6 +22,7 @@ const ProductGrid = ({ array }) => {
             })}
           </Row>
       </Container>
+
     )
 }
 

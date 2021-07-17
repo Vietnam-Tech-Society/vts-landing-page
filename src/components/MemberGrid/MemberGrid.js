@@ -9,7 +9,7 @@ const MemberGrid = ({ array }) => {
                 <Row>
                 {array.map((member, index) => {
                   return (
-                    <Col xs={6} md={3} key={index} className="team-img-container">
+                    <Col xs={6} md={3} className="team-img-container">
                       <Image className="team-img" src={member.url.default} alt="avatar" />
                       <div className="team-description">
                         <div className="name">{member.name}</div>

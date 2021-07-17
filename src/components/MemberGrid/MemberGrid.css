@@ -10,12 +10,6 @@
     font-family: VTS;
   }
   
-  @media screen and (min-width: 600px) {
-    #footer {
-      font-size: max(1vw, 15px);
-    }
-  
-  }
   
   .name {
     font-weight: bold;

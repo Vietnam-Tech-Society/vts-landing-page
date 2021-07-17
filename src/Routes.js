@@ -4,7 +4,7 @@ import {
   Route
 } from "react-router-dom";
 import { Home } from './pages/Homepage';
-import Product from './pages/Product';
+import { Product } from './pages/Product';
 import { About } from './pages/About';
 
 const Routes = () => (
