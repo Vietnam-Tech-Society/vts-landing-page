@@ -33,26 +33,45 @@ const Homepage = () => {
 
             <div className="establishment">
                 <Row>
-                    <Col xs={12} lg={4} style={{height:"25vw"}} className="text-grid">
-                        <div style={{width: "70%", position: "absolute", top: "5%", left: "5%"}}> Placeholder Text </div>
+                    <Col xs={12} lg={4}>
+                        <div className="text-grid" style={{height:"45vw"}}> 
+                            <div className="text-grid-container top left"> 
+                                ABCXYZASD  IAENF IHEFIKA,M  AIFHWIAL KSCBA AHFOAWLNC ABC XYZA SDH NQEJJ KCV OELN DZ CHOAIL FZXCI AENF IHEF IKA,M  AIF HW IALKS CBA AHFOA WLN jjC
+                            </div>
+                        </div>
+                        <div className="text-grid" style={{height:"30vw"}}>
+                            <div className="text-grid-container bottom left"> 
+                                ABC XYZA OAIL IKA, ELN DZ CHOAIL FZXCI AENF IHEF IKA,M  AIF HW IALKS CBA KS CBA AHFOA WLN jjC
+                            </div>
+                        </div>
                     </Col>
-                    <Col xs={12} lg={4} style={{height:"15vw"}} className="text-grid">
-                        <div style={{width: "70%", position: "absolute", top: "85%", left: "5%"}}> Placeholder Text </div>
+                    <Col xs={12} lg={4}>
+                        <div className="text-grid" style={{height:"30vw"}}>
+                            <div className="text-grid-container bottom left"> 
+                                ABCXYZASDHNQEJJKCV OELN DZCHOAILFZXCIAENF IHEFIKA,M  AIFHWIALKSCBA AHFOAWLNC
+                            </div>
+                        </div>
+                        <div className="text-grid" style={{height:"45vw"}}>
+                            <div className="text-grid-container bottom right"> 
+                                ABCXYZASDHNQEJJKCV OELN DZCHOAILFZXCIAENF IHEFIKA,M  AIFHWIALKSCBA AHFOAWLNC
+                            </div>
+                        </div>
                     </Col>
-                    <Col xs={12} lg={3} style={{height:"25vw"}} className="text-grid">
-                        <div style={{width: "70%", position: "absolute", top: "5%", left: "45%"}}> Placeholder Text </div>
-                    </Col>
-                    <Col xs={12} lg={4} style={{height:"15vw"}} className="text-grid">
-                        <div style={{width: "70%", position: "absolute", top: "85%", left: "5%"}}> Placeholder Text </div>
-                    </Col>
-                    <Col xs={12} lg={4} style={{height:"25vw"}} className="text-grid">
-                        <div style={{width: "70%", position: "absolute", top: "85%", left: "5%"}}> Placeholder Text </div>
-                    </Col>
-                    <Col xs={12} lg={3} style={{height:"15vw"}} className="text-grid">
-                        <div style={{width: "70%", position: "absolute", top: "85%", left: "45%"}}> Placeholder Text </div>
+                    <Col xs={12} lg={4}>
+                        <div className="text-grid" style={{height:"45vw"}}>
+                            <div className="text-grid-container top right "> 
+                                ABCXYZASDHNQEJJKCV OELN DZCHOAILFZXCIAENF IHEFIKA,M  AIFHWIALKSCBA AHFOAWLNC
+                            </div>
+                        </div>
+                        <div className="text-grid" style={{height:"30vw"}}>
+                            <div className="text-grid-container top left"> 
+                                ABCXYZASDHNQEJJKCV OELN DZCHOAILFZXCIAENF IHEFIKA,M  AIFHWIALKSCBA AHFOAWLNC
+                            </div>
+                        </div>
                     </Col>
                 </Row>
             </div>
+
 
             <div className="establishment">
                 <Row>
