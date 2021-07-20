@@ -1,34 +1,84 @@
-import React from 'react';
+import React, { useState, useEffect } from 'react';
 import bigLogo from "../../assets/img/Logo_lettermark_dark.svg";
-import fb from "../../assets/img/facebook.png";
-import mail from "../../assets/img/Mail.png"
-import ig from "../../assets/img/instagram.png"
-import { Container, Row, Col, Image } from 'react-bootstrap';
-import './Footer.css'
+import { Row, Col } from 'react-bootstrap';
+import './Footer.css';
+import { MailIcon, FBIcon, IGIcon } from '../../assets/icons'; 
 
 const Footer = () => {
+  const [isMobile, setIsMobile] = useState(getWindowDimensions());
+
+  useEffect(() => {
+    function handleResize() {
+      setIsMobile(getWindowDimensions());
+    }
+
+    window.addEventListener('resize', handleResize);
+    return () => window.removeEventListener('resize', handleResize);
+  }, []);
+
+  function getWindowDimensions() {
+    const { innerWidth: width } = window;
+    return width <= 640;
+  }
+
   return (
     <div id="footer">
-        <Row >
-          <Col xs={12} lg={7}>
-            <img src={bigLogo} className="disappear" alt="" />
-          </Col>
-          <Col xs={12} lg={5}className="flex-gap center">
-            <img src={fb}  />
-            <img src={mail} />
-            <img src={ig} />
-
-          </Col>
-        </Row> 
-
-        <Row>
-          <Col xs={12} lg={6} className="center-left">Copyright 2021 - Vietnam Tech Society</Col>
-          <Col xs={12} lg={6} className="flex-gap center">
-              <a href="/">Contact Us</a>
-              <a href="/">Privacy Policy</a>
-              <a href="/">Terms of Use</a>
-          </Col>
-        </Row>
+      {/* 
+        We need to split the footer into 2 mode: mobile and normal since the design for mobile is too diferent from
+        the normal screen and it is not worth cramping the two versions into 1 piece of code
+      */}
+      {!isMobile
+        ? (
+          <>
+            <Row >
+              <Col xs={12} md={7}>
+                <img src={bigLogo} className="footer-logo" alt="VTS Logo" />
+              </Col>
+              <Col xs={12} md={5} className="footer-social-media">
+                <MailIcon />
+                <FBIcon />
+                <IGIcon />
+              </Col>
+            </Row> 
+            <Row>
+              <Col xs={12} md={6}>
+                <div className="copyright-text">
+                  <span>Copyright 2021 - Vietnam Tech Society</span>
+                </div>
+              </Col>
+              <Col xs={12} md={6} className="footer-social-media">
+                  <a href="/">Contact Us</a>
+                  <a href="/">Privacy Policy</a>
+                  <a href="/">Terms of Use</a>
+              </Col>
+            </Row>
+          </>
+        ) : (
+          <>
+            <Row>
+              <Col className="footer-social-media">
+                <MailIcon />
+                <FBIcon />
+                <IGIcon />
+              </Col>
+            </Row> 
+            <Row style={{ marginTop: '20px' }}>
+              <Col className="footer-social-media">
+                <a href="/">Contact Us</a>
+                <a href="/">Privacy Policy</a>
+                <a href="/">Terms of Use</a>
+              </Col>
+            </Row>
+            <Row style={{ marginTop: '20px' }}>
+              <Col className="footer-social-media">
+                <span>Copyright 2021 - Vietnam Tech Society</span>
+              </Col>
+              
+            </Row>
+          </>
+        )
+      }
+      
     </div>
   );
 } 
