@@ -13,7 +13,9 @@ const MemberGrid = ({ array }) => {
                       <Image className="team-img" src={member.url.default} alt="avatar" />
                       <div className="team-description">
                         <div className="name">{member.name}</div>
+                        <div className="org">{member.org}</div>
                         <div className="role">{member.pos}</div>
+
                       </div>
                     </Col>
                     

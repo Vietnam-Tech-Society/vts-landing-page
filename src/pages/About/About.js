@@ -59,28 +59,20 @@ const About = () => {
             <MemberGrid array={constants.teamInfo} />
 
             <div className="subheader">
-            <Row>
-                <Col xs={6}>
-                    <p className="subheader-text"> Our Mentors</p>
-                </Col>
-                <Col xs={6}>                     
-                    <Image id="subheader-img" src={subheader} alt="subheader"  />
-                </Col>
-            </Row>
+                <Row>
+                    <Col xs={6}>
+                        <p className="subheader-text"> Our Mentors</p>
+                    </Col>
+                    <Col xs={6}>                     
+                        <Image id="subheader-img" src={subheader} alt="subheader"  />
+                    </Col>
+                </Row>
             </div>
             <MemberGrid array={constants.mentorInfo} />
 
-            <div className="subheader">
-            <Row>
-                <Col xs={6}>
-                    <p className="subheader-text"> Our Partners </p>
-                </Col>
-                <Col xs={6}>                     
-                    <Image id="subheader-img" src={subheader} alt="subheader"  />
-                </Col>
-            </Row>
-            </div>
-            <MemberGrid array={constants.partnerInfo} />
+  
+  
+      
         </div>
     )
 };

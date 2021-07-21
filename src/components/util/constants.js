@@ -25,6 +25,7 @@ export const teamInfo = [
     {
       name: "Henry Le",
       pos: "Founder & CEO",
+      org:"",
       url: require("../../assets/img/henry.png"),
       linkedin: "https://www.linkedin.com/in/lethehien/",
       statement: '"I would like to build products that connect all the isolated Vietnamese techies.”' + 
@@ -35,6 +36,7 @@ export const teamInfo = [
     {
       name: "Nghi Truong",
       pos: "Chief of Growth",
+      org:"",
       url: require("../../assets/img/nghi.png"),
       linkedin: "https://www.linkedin.com/in/hainghi95/",
       statement: 'Nghi had coded for 8 years since she was 10 but did not pursue Computer Science. She has ' +
@@ -45,6 +47,7 @@ export const teamInfo = [
     {
       name: "Phu Tran",
       pos: "Director of Marketing",
+      org:"",
       url: require('../../assets/img/phu.png'),
       linkedin: "https://www.linkedin.com/in/phutran526/",
       statement: 'After his 1-year internship in Marketing, Phu continues to pursue his Bachelor\'s degree in ' + 
@@ -57,6 +60,7 @@ export const teamInfo = [
     {
       name: "Dung Nguyen",
       pos: "Director of Branding",
+      org:"",
       url: require("../../assets/img/dung.png"),
       linkedin: "https://www.linkedin.com/in/dungdung/",
       statement: 'Graduating from Foreign Trade University (HCMC), Dung is working for VNG Corporation, ' + 
@@ -69,6 +73,7 @@ export const teamInfo = [
     {
       name: "Anh Tran",
       pos: "Chief of Product",
+      org:"",
       url: require("../../assets/img/anh.png"),
       linkedin: "https://www.linkedin.com/in/anhletran",
       statement: 'Ever since his childhood, Anh has dreamed of building products that improve ' + 
@@ -80,6 +85,7 @@ export const teamInfo = [
     {
       name: "Kathy Nguyen",
       pos: "Operation Manager",
+      org:"",
       url: require("../../assets/img/kathy.png"),
       linkedin: "https://www.linkedin.com/in/kathy-han-nguyen/",
       statement: 'Being the youngest member of our team, Kathy’s current field of interest is ' + 
@@ -92,6 +98,7 @@ export const teamInfo = [
     {
       name: "Quan Luong",
       pos: "Director of Finance",
+      org:"",
       url: require("../../assets/img/quan.png"),
       linkedin: "https://www.linkedin.com/in/quanluongthanh/",
       statement: 'Quan has a Bachelor’s degree in Business Administration (Accounting concentration) from University of Oklahoma. ' + 
@@ -103,6 +110,7 @@ export const teamInfo = [
     {
       name: "Quynh Nguyen",
       pos: "Content Creator",
+      org:"",
       url: require("../../assets/img/quynh.png"),
       linkedin: "https://www.linkedin.com/in/quynhnguyen26/",
       statement: 'Quynh entered tech after graduating from the University of Languages and International Studies (VNU). ' + 
@@ -114,6 +122,7 @@ export const teamInfo = [
     {
       name: "Caroline Le",
       pos: "Professional Network Manager",
+      org:"",
       url: require("../../assets/img/caroline.png"),
       linkedin: "https://www.linkedin.com/in/carolinedungle/",
       statement: 'Caroline is pursuing a business degree from Drexel University, but her passion for technology ' + 
@@ -126,6 +135,7 @@ export const teamInfo = [
     {
       name: "Minh Pham",
       pos: "Professional Network Manager",
+      org:"",
       url: require("../../assets/img/minh.png"),
       linkedin: "https://www.linkedin.com/in/minhqpham/",
       statement: ' Minh is a student at Case Western Reserve University & an incoming Software Engineering intern at Microsoft. ' + 
@@ -138,6 +148,7 @@ export const teamInfo = [
     {
       name: "Nhu Nguyen",
       pos: "Graphic Designer",
+      org:"",
       url: require("../../assets/img/nhu.png"),
       linkedin: "https://www.linkedin.com/in/nhu-nguyen-3bab56188/",
       statement: 'Nhu’s major at the University of Architecture HCMC was Industrial Design. She first became ' + 
@@ -150,6 +161,7 @@ export const teamInfo = [
     {
       name: "Linh Dang",
       pos: "Product Manager",
+      org:"",
       url: require("../../assets/img/linh.png"),
       linkedin: "https://www.linkedin.com/in/linh-dang-18b5b2155/",
       statement: 'Linh is currently a Finance and Accounting Management student at Northeastern University. She ' + 
@@ -161,6 +173,7 @@ export const teamInfo = [
     {
       name: "Anh Ngo",
       pos: "Professional Network Manager",
+      org:"",
       url: require("../../assets/img/jason.png"),
       linkedin: "https://www.linkedin.com/in/anqngo/",
       statement: 'Anh Ngo majors in Computer Science & Math at Haverford College, and he will be a Software Engineer ' + 
@@ -172,6 +185,7 @@ export const teamInfo = [
     {
       name: "Vy Le",
       pos: "Content Creator",
+      org:"",
       url: require("../../assets/img/vy.png"),
       linkedin: "",
       statement: 'As a content creator, Vy is quite a big fan of tech thanks to its many applications making her job ' + 
@@ -182,55 +196,77 @@ export const teamInfo = [
     {
       name: "Hien Le",
       pos: "Chief of Marketing",
+      org:"",
       url: require("../../assets/img/hien_le.jpg")
     },
     {
       name: "Tram Ky",
       pos: "Chief of Design",
+      org:"",
       url: require("../../assets/img/tram_ky.jpeg")
     },
     {
       name: "Leila Do",
       pos: "Product Designer",
+      org:"",
       url: require("../../assets/img/leila_do.jpg")
     },
     {
       name: "Tri Nguyen",
       pos: "Software Engineer",
+      org:"",
       url: require("../../assets/img/tri_nguyen.jpg")
     },
     {
       name: "Thang Nguyen",
       pos: "Software Engineer",
-      url: require("../../assets/img/thang_nguyen.jpg")
+      org:"",
+      url: require("../../assets/img/thang.jpg")
     },
     {
       name: "Vivian Luu",
       pos: "Software Engineer",
+      org:"",
       url: require("../../assets/img/vivian_luu.jpg")
     }
 ];
 
 export const mentorInfo = [
   {
-    name: "Henry Le",
-    pos: "Founder & CEO",
-    url: require("../../assets/img/henry.png"),
+    name: "Tuan Hue Thi",
+    pos: "Senior Research Engineer",
+    org: "Amazon Go",
+    url: require("../../assets/img/tuan_thi.jpg"),
   },
   {
-    name: "Henry Le",
-    pos: "Founder & CEO",
-    url: require("../../assets/img/henry.png"),
+    name: "Khiem Nguyen",
+    pos: "Product Designer Lead ",
+    org: "Oracle",
+    url: require("../../assets/img/khiem_nguyen.jpeg"),
   },
   {
-    name: "Henry Le",
-    pos: "Founder & CEO",
-    url: require("../../assets/img/henry.png"),
+    name: "Chi Le",
+    pos: "Growth Marketing Analyst",
+    org: "bitFlyer",
+    url: require("../../assets/img/chi_le.jpeg"),
   },
   {
-    name: "Henry Le",
-    pos: "Founder & CEO",
-    url: require("../../assets/img/henry.png"),
+    name: "David Nguyen",
+    pos: "Senior Research Scientist",
+    org: "Facebook",
+    url: require("../../assets/img/david_nguyen.jpeg"),
+  },
+  {
+    name: "Vu Pham",
+    pos: "Senior Software Engineer",
+    org: "Facebook",
+    url: require("../../assets/img/vu_pham.jpeg"),
+  },
+  {
+    name: "James Baduor",
+    pos: "Co-Founder and Chief Product Officer",
+    org: "adplist.org",
+    url: require("../../assets/img/james.jpeg"),
   }
 ];
 
