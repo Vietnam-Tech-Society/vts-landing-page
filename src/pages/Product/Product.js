@@ -1,7 +1,7 @@
 import React from 'react'
 import ProductGrid from "../../components/ProductGrid/ProductGrid";
 import * as constants from '../../components/util/constants';
-import { Col, Container, Row, Image, Button } from 'react-bootstrap'
+import { Col, Row, Image, Button } from 'react-bootstrap'
 import './Product.css'
 import placeholder from "../../assets/img/placeholder.jpg"
 
