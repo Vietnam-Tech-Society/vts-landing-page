@@ -1,14 +1,17 @@
+
+
+
 .navbar-header {
-  font-family: VTS;
+
   font-weight: bold;  
   padding-left: 10% !important;
   padding-right: 10% !important;
-  font-size: max(1.3vw, 18px);
+  font-size: max(1vw, 15px);
   white-space: nowrap;
 }
 
 .navbar-logo {
-  width: 180%;
+  width: 120%;
 }
 
 .nav-gap {
@@ -16,17 +19,37 @@
 }
 
 .logo-container{
-  width: 40%;
+  width: 50%;
   margin-left: -8vw;
+  margin-top: -2.5vw;
+  margin-bottom: -2.5vw;
+
+}
+
+@media screen and (min-width: 576px) {
+  .navbar-logo {
+    width: 80%;
+  }
 }
 
 
 @media screen and (min-width: 768px) {
-  .logo-container{
-    width: 30%;
-  }
   .navbar-logo {
-    width: 200%;
+    width: 60%;
+  }
+}
+
+@media screen and (min-width: 992px) {
+  .navbar-logo {
+    width: 50%;
+  }
+  
+
+}
+
+@media screen and (min-width: 1024px) {
+  .navbar-logo {
+    width: 40%;
   }
   
 

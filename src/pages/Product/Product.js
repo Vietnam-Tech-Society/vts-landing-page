@@ -39,11 +39,11 @@ const Product = () => {
           </Row>
 
           <Row className="container-gap">
-            <Col xs={12} xl={8} className="center">
+            <Col xs={12} xl={8} className="center"  >
               <h2 className="bold row-margin">Be the first one to experience our product</h2>
             </Col>
-            <Col xs={12} xl={4} className="center" >
-            <Button style={{backgroundColor:"#14ffd8", padding:"10px", color: "#010042", fontWeight: "700", borderStyle: "hidden"}} className="row-margin farther">Sign up for private beta testing &#62;</Button>
+            <Col xs={12} xl={4} className="center" style={{display:"flex"}}  >
+            <Button style={{backgroundColor:"#14ffd8", padding:"10px", color: "#010042", fontWeight: "700", borderStyle: "hidden"}} className="row-margin closer  center">Sign up for private beta testing &#62;</Button>
             </Col>
           </Row>
           
