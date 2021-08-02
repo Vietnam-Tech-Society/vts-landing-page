@@ -31,7 +31,7 @@ const Homepage = () => {
             </div>
 
 
-            <div className="establishment">
+            <div >
                 <Row>
                     <Col xs={12} lg={4}>
                         <div className="text-grid" style={{height:"45vw"}}> 
