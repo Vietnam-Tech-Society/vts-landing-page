@@ -1,12 +1,15 @@
 .product-page {
-    width: 80%;
+    width: 100%;
     margin: auto;
 }
 
 .img-container{
     width: 100%;
+    background-color: black;
     margin: 5vw;
 }
+
+
 
 #img{
     width: 100%;
@@ -24,7 +27,8 @@
 }
 
 .container-gap{
-    margin: 10vw 0vw;
+    margin-top: 5vw;
+    padding: 5vw 10vw;
 }
 
 .row-margin{

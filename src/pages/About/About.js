@@ -2,6 +2,7 @@ import React from 'react'
 import { Col, Row, Image } from 'react-bootstrap'
 import './About.css'
 import placeholder from "../../assets/img/placeholder.jpg"
+import image from "../../assets/img/about_us_page_image.png"
 import { MemberGrid } from "../../components/MemberGrid"
 import subheader from "../../assets/img/subheader.png"
 import * as constants from '../../components/util/constants';
@@ -10,26 +11,42 @@ const About = () => {
     return(
         <div className="about-page">
             <div className="intro">
-                    <h1 className="text-container big-font text-bold"> Placeholder Text </h1>
+                    <p className="text-container big-font text-bold"> To advance Vietnamese  <br/>
+                    students and professionals 
+                    </p>
                     <h3 className="text-container text-bold">
                         In 2020, we realized that Vietnamese tech students and professionals rarely get the right help when they struggle with professional careers
                     </h3>
                     <h4 className="text-container"> A group of passionate students and professionals came together </h4>
             </div>
             <div className="establishment">
-                <h1 className="text-container text-bold"> Vietnam Tech Society (VTS) was established </h1>
                 <Row>
-                    <Col xs={12} sm={6}>
+                    <Col xs={12} lg={6}>
+                    <h1 className="text-container text-bold row-gap"> Vietnam Tech Society (VTS) was established </h1>
                         <h4 className="text-container row-gap">
                             We are a non-profit organization, aspiring to be a top-of-mind organization for Vietnamese people in tech. It is our ambition to be a strong representation of the Vietnamese tech community in the U.S., E.U., Singapore and Vietnam.
                         </h4>
                     </Col>
-                    <Col xs={12} sm={6}>                     
+                    <Col xs={12} lg={6}>                     
                         <Image src={placeholder} alt="commitment" style={{ width: "100%", margin: "auto"}}/>
                     </Col>
                 </Row>
             </div>
 
+            <div className="establishment">
+                <Row>
+                <Col xs={12} lg={6} >                     
+                        <Image src={placeholder} alt="commitment" style={{ width: "100%", margin: "auto"}}/>
+                    </Col>
+                    <Col xs={12} lg={6}>
+                    <h1 className="text-container text-bold row-gap"> We focus on</h1>
+                        <h4 className="text-container row-gap ">
+                        helping tech students and professionals whose fields include but not limited to software development, data science/analytics, and product management with first job search, career switch and development in general.
+                        </h4>
+                    </Col>
+
+                </Row>
+            </div>
    
             <div className="commitment">
                 <Row><h1 className="text-container text-bold"> We are committed to</h1></Row>
@@ -42,7 +59,7 @@ const About = () => {
                     </Col>
                 </Row>
                 <div className="image-container">  
-                    <Image src={placeholder} alt="commitment" style={{ width: "100%", margin: "auto" }}/>
+                    <Image src={image} alt="commitment" style={{ width: "100%", margin: "auto", borderRadius: "2%" }}/>
                 </div>
             </div>
 

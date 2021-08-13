@@ -4,7 +4,7 @@ import './ProductGrid.css'
 /* import headerimage from "../assets/img/header.png"
 import placeholder from '../assets/img/placeholder.jpg' */
 
-const ProductGrid = ({ array }) => {
+const ProductGrid = ({ array}) => {
     return(
         
         <Container>
