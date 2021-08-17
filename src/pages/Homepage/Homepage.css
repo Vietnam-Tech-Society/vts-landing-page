@@ -10,7 +10,13 @@
     src: url(../../assets/font/brown.ttf);
   }
   
+.short-column {
+    height: 30vw;
+}
 
+.long-column {
+    height: 45vw;
+}
 
 .Homepage {
     min-height: 100vh;
@@ -19,19 +25,20 @@
 
 
 .text-grid{
-    margin-top: 1vw;
+    margin-top: 3vw;
     background-color: #175996;
     color: white;
     position: relative;
+    border-radius: 2.5%;
 }
 
 .text-grid-container{
-    width: 80%;
-    height: 60%;
+    width: 85%;
+    height: 70%;
     position: absolute;
-    background-color: #0e467a;
-    padding: 2vw;
-    font-weight: 600;
+    padding: 2.5vw;
+    border-radius: 2.5%;
+
 }
 
 .top{
@@ -39,7 +46,7 @@
 }
 
 .bottom {
-    top: 40%;
+    top: 35%;
 }
 
 .left{
@@ -47,7 +54,7 @@
 }
 
 .right{
-    left: 20%;
+    left: 15%;
 }
 
 .blue-button{
@@ -123,8 +130,8 @@
 }
 
 .button-container{
-    width: 60%;
-    margin: 4vw 14vw;
+    width: 80%;
+
 }
 
 @media screen and (min-width: 576px) {    
@@ -159,7 +166,16 @@
 
     .button-container{
         width: 60%;
-        margin: 4vw 15vw;
+        
+
+    }
+
+    .short-column {
+        height: 25vw;
+    }
+    
+    .long-column {
+        height: 35vw;
     }
 
 
@@ -175,7 +191,7 @@
 
     .button-container{
         width: 40%;
-        margin: 3vw 22vw;
+
     }
 
     .text-container {
@@ -196,11 +212,27 @@
     .header {
         height: 110vw;
     }
+
+    .short-column {
+        height: 15vw;
+    }
+    
+    .long-column {
+        height: 20vw;
+    }
 }
 
 @media screen and (min-width: 992px) {
     .header-title {
         font-size: 4.5rem;
+    }
+
+    .short-column {
+        height: 20vw;
+    }
+    
+    .long-column {
+        height: 30vw;
     }
     .header-text{
         top: 15%;
@@ -227,7 +259,7 @@
 
     .button-container{
         width: 60%;
-        margin: 3vw -1vw;
+       
     }
 }
 
@@ -252,6 +284,15 @@
     .button-container{
         width: 50%;
 
+    }
+
+
+    .short-column {
+        height: 15vw;
+    }
+    
+    .long-column {
+        height: 25vw;
     }
 }
 

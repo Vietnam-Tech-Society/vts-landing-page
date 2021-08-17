@@ -1,24 +1,47 @@
 export const mentorArray = [
     {
-      title: "Henry Le",
-      subtitle: "PlaceHolder",
+      title: "Connected",
+      subtitle: "Make resourceful connections on recruiting, partnership, and job opportunities",
       url: require("../../assets/img/facebook.png"),
     },
     {
-        title: "Henry Le",
-        subtitle: "PlaceHolder",
+        title: "Nuturing",
+        subtitle: "Discover and develop new talents from Vietnamese community",
         url: require("../../assets/img/facebook.png"),
     },
     {
-        title: "Henry Le",
-        subtitle: "PlaceHolder",
+        title: "Giving Back",
+        subtitle: "Giving is not just about making a donation, it’s about making a difference",
         url: require("../../assets/img/facebook.png"),
     },
     {
-        title: "Henry Le",
-        subtitle: "PlaceHolder",
+        title: "Recognized",
+        subtitle: "Mentees will give great recommendations on LinkedIn for successful mentoring sessions",
         url: require("../../assets/img/facebook.png"),
     }
+]
+
+export const menteeArray = [
+  {
+    title: "Guidance",
+    subtitle: "Mentor will help you helpful advices for the next steps in your career",
+    url: require("../../assets/img/facebook.png"),
+  },
+  {
+      title: "Growing",
+      subtitle: "Learn from your mentor’s experience to broaden your perspective",
+      url: require("../../assets/img/facebook.png"),
+  },
+  {
+      title: "Training",
+      subtitle: "Develop job essential skills to succeed in your role",
+      url: require("../../assets/img/facebook.png"),
+  },
+  {
+      title: "Engaging",
+      subtitle: "Join a knowledge-sharing network and discover new job opportunities",
+      url: require("../../assets/img/facebook.png"),
+  }
 ]
 
 export const teamInfo = [
@@ -120,19 +143,6 @@ export const teamInfo = [
       'mentee who can bear powerful testimony to how VTS helps materialize any tech enthusiasts’ dream.'
     },
     {
-      name: "Caroline Le",
-      pos: "Professional Network Manager",
-      org:"",
-      url: require("../../assets/img/caroline.png"),
-      linkedin: "https://www.linkedin.com/in/carolinedungle/",
-      statement: 'Caroline is pursuing a business degree from Drexel University, but her passion for technology ' + 
-      'brought her to many roles in big tech corporations as Bose & SAP. She is passionate about combining ' + 
-      'technology with business to design products that make life more fulfilling. Whenever she thinks of ' + 
-      'VTS, “Vietnamese!” is all she wants to say. \n \n She believes anyone has the potential to do more, ' + 
-      'achieve more, and be more. VTS is where she can actualize that by providing tech professionals in need ' + 
-      'with opportunities to be better at what they do.'
-    },
-    {
       name: "Minh Pham",
       pos: "Professional Network Manager",
       org:"",
@@ -183,6 +193,18 @@ export const teamInfo = [
       'for tech enthusiasts in which he wants to create a mentoring culture and make a difference to the Vietnamese tech community.'
     },
     {
+      name: "Linh Tran",
+      pos: "Professional Network Manager",
+      org:"",
+      url: require("../../assets/img/linh_mai_tran.jpg"),
+      linkedin: "https://www.linkedin.com/in/anqngo/",
+      statement: 'Anh Ngo majors in Computer Science & Math at Haverford College, and he will be a Software Engineer ' + 
+      'at Bloomberg after graduation. Anh first entered tech thanks to the profuse possibilities it offers. Not until a ' + 
+      'college course regarding bridging the gap between DNA assembly and high impact software did he truly develop his ' + 
+      'interest in tech. Also, as this field is full of challenges, he loves it. \n \n VTS to him is an organization ' + 
+      'for tech enthusiasts in which he wants to create a mentoring culture and make a difference to the Vietnamese tech community.'
+    },
+    {
       name: "Vy Le",
       pos: "Content Creator",
       org:"",
@@ -224,11 +246,29 @@ export const teamInfo = [
       url: require("../../assets/img/thang.jpg")
     },
     {
+      name: "Loc Bui",
+      pos: "Software Engineer",
+      org:"",
+      url: require("../../assets/img/loc_bui.jpg")
+    },
+    {
+      name: "Khanh Do",
+      pos: "Software Engineer",
+      org:"",
+      url: require("../../assets/img/square_placeholder.jpg")
+    },
+    {
       name: "Vivian Luu",
       pos: "Software Engineer",
       org:"",
       url: require("../../assets/img/vivian_luu.jpg")
-    }
+    },
+    {
+      name: "Tuan Doan",
+      pos: "Product Manager",
+      org:"",
+      url: require("../../assets/img/square_placeholder.jpg")
+    },
 ];
 
 export const mentorInfo = [

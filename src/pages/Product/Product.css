@@ -5,8 +5,8 @@
 
 .img-container{
     width: 100%;
-    background-color: black;
-    margin: 5vw;
+    margin: auto;
+
 }
 
 
@@ -47,9 +47,7 @@
         margin: 10vw 3vw 3vw;
     }
 
-    .img-container{
-        margin: 3vw;
-    }
+
 
     .product-page {
         width: 70%;
@@ -72,9 +70,6 @@
         
     }
 
-    .img-container{
-        margin: 4vw 0vw;
-    }
 
     .farther{
         margin-top: 4vw;

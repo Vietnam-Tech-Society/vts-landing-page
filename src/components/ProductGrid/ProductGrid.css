@@ -2,18 +2,19 @@
 
 .product-img-container, .product-description {
   width: 100%;
+  margin-top: 2vw;
   margin-bottom: 2vw;
   font-family: VTS;
 }
   
 
 .title {
-  font-weight: bold;
-  font-size: 2rem;
+  font-weight: 800;
+  font-size: 1.75rem;
 }
   
 .subtitle {
-  font-size: 1.5rem;
+  font-size: 1.25rem;
 }
 
 @media screen and (min-width: 768px) {  

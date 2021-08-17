@@ -5,6 +5,8 @@ import placeholder from "../../assets/img/placeholder.jpg"
 import image from "../../assets/img/about_us_page_image.png"
 import { MemberGrid } from "../../components/MemberGrid"
 import subheader from "../../assets/img/subheader.png"
+import about1 from "../../assets/img/about_us_1.png"
+import about2 from "../../assets/img/about_us_2.png"
 import * as constants from '../../components/util/constants';
 
 const About = () => {
@@ -28,7 +30,7 @@ const About = () => {
                         </h4>
                     </Col>
                     <Col xs={12} lg={6}>                     
-                        <Image src={placeholder} alt="commitment" style={{ width: "100%", margin: "auto"}}/>
+                        <Image src={about1} alt="commitment" style={{ width: "100%", margin: "auto"}}/>
                     </Col>
                 </Row>
             </div>
@@ -36,7 +38,7 @@ const About = () => {
             <div className="establishment">
                 <Row>
                 <Col xs={12} lg={6} >                     
-                        <Image src={placeholder} alt="commitment" style={{ width: "100%", margin: "auto"}}/>
+                        <Image src={about2} alt="commitment" style={{ width: "100%", margin: "auto"}}/>
                     </Col>
                     <Col xs={12} lg={6}>
                     <h1 className="text-container text-bold row-gap"> We focus on</h1>
