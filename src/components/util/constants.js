@@ -5,7 +5,7 @@ export const mentorArray = [
       url: require("../../assets/img/facebook.png"),
     },
     {
-        title: "Nuturing",
+        title: "Nurturing",
         subtitle: "Discover and develop new talents from Vietnamese community",
         url: require("../../assets/img/facebook.png"),
     },
