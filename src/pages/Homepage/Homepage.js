@@ -36,16 +36,16 @@ const Homepage = () => {
                 <Row>
                     <Col xs={12} lg={4}>
                         <div className="text-grid long-column" > 
-                            <div className="text-grid-container top left"> 
+                            <div className="text-grid-container"> 
 
                             <h6> “I hope to build a platformfor people who seek mentorship and connection.”</h6>
                                <p> Vivian Luu, Software Engineer </p>
                             </div>
                         </div>
                         <div className="text-grid short-column" >
-                            <div className="text-grid-container bottom left">
+                            <div className="text-grid-container" style={{top: "45%"}}> 
                                  <h6>
-                            "Mentorship should be easy and accessible to Vietnamese students!""
+                            "Mentorship should be easy and accessible to Vietnamese students!"
                                 </h6>
                                 <p> Anh Tran, Product Manager </p>
                                 </div>
@@ -54,13 +54,13 @@ const Homepage = () => {
                     </Col>
                     <Col xs={12} lg={4}>
                         <div className="text-grid short-column" >
-                            <div className="text-grid-container bottom left"> 
+                            <div className="text-grid-container" style={{top: "55%"}}> 
                             <h6> “It’s fun to be in a group of weird people at VTS!”</h6>
                             <p> Theodore Le, Chief of Marketing </p>
                             </div>
                         </div>
                         <div className="text-grid long-column">
-                            <div className="text-grid-container bottom right"> 
+                            <div className="text-grid-container" style={{top: "50%", right: "2%"}}> 
                                 <h6> "It’s always hard when you want to change your career path, but I’m thankful that VTS connects me with the right mentor in my new direction."</h6>
                                 <p> Quynh Nguyen, Marketing </p>
                             </div>
@@ -68,9 +68,9 @@ const Homepage = () => {
                     </Col>
                     <Col xs={12} lg={4}>
                         <div className="text-grid long-column" >
-                            <div className="text-grid-container top right "> 
-                                <h6> “Son shared with me a lot of useful materials and advice on doing LeetCode. He even offered helping with mock interview and referrals later on.</h6>
-                                <p> Diep Vu,  </p>
+                            <div className="text-grid-container" style={{ right: "2%"}}> 
+                                <h6> "Son shared with me a lot of useful materials and advice on doing LeetCode. He even offered helping with mock interview and referrals later on."</h6>
+                                <p> Diep Vu, TechSphere's Community Member </p>
                             </div>
                         </div>
                         <div className="text-grid short-column" >

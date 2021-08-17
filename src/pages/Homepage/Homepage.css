@@ -11,11 +11,11 @@
   }
   
 .short-column {
-    height: 30vw;
+    height: 50vw;
 }
 
 .long-column {
-    height: 45vw;
+    height: 75vw;
 }
 
 .Homepage {
@@ -33,10 +33,10 @@
 }
 
 .text-grid-container{
-    width: 85%;
-    height: 70%;
+    width: 80%;
+    height: 50%;
     position: absolute;
-    padding: 2.5vw;
+    margin: 1.5vw;
     border-radius: 2.5%;
 
 }
