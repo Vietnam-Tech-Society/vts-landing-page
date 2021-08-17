@@ -2,7 +2,6 @@ import React from 'react'
 import { Col, Row, Image, Button } from 'react-bootstrap'
 import headerimage from "../../assets/img/header.png"
 import header from '../../assets/img/homepage_header.png'
-import placeholder from '../../assets/img/placeholder.jpg'
 import mentorship from '../../assets/img/mentorship.png'
 import './Homepage.css'
 

@@ -1,7 +1,6 @@
 import React from 'react'
 import { Col, Row, Image } from 'react-bootstrap'
 import './About.css'
-import placeholder from "../../assets/img/placeholder.jpg"
 import image from "../../assets/img/about_us_page_image.png"
 import { MemberGrid } from "../../components/MemberGrid"
 import subheader from "../../assets/img/subheader.png"
