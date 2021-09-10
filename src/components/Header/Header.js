@@ -7,7 +7,7 @@ import './Header.css'
 
 const Header = ({ mode }) => {
   return (
-    <Navbar expand="lg" bg="light" variant="light" className="navbar-header" >
+    <Navbar expand="lg" variant="light" className="navbar-header" >
       <Navbar.Brand className="logo-container" href="/">
         <img src={mode === "dark" ? lightLogo : darkLogo} alt="logo" className="navbar-logo" />
       </Navbar.Brand>

@@ -1,12 +1,15 @@
 .product-page {
-    width: 80%;
+    width: 100%;
     margin: auto;
 }
 
 .img-container{
     width: 100%;
-    margin: 5vw;
+    margin: auto;
+
 }
+
+
 
 #img{
     width: 100%;
@@ -16,6 +19,7 @@
 
 .center{
     margin: auto;
+
 }
 
 .bold {
@@ -23,7 +27,8 @@
 }
 
 .container-gap{
-    margin: 10vw 0vw;
+    margin-top: 5vw;
+    padding: 5vw 10vw;
 }
 
 .row-margin{
@@ -42,9 +47,7 @@
         margin: 10vw 3vw 3vw;
     }
 
-    .img-container{
-        margin: 3vw;
-    }
+
 
     .product-page {
         width: 70%;
@@ -64,11 +67,9 @@
 @media screen and (min-width: 768px) {    
     .row-margin{
         margin: 0vw;
+        
     }
 
-    .img-container{
-        margin: 4vw 0vw;
-    }
 
     .farther{
         margin-top: 4vw;
