@@ -4,6 +4,11 @@
   padding-right: 10% !important;
   font-size: max(1vw, 15px);
   white-space: nowrap;
+  position: absolute !important;
+  top: 0;
+  right: 0;
+  left: 0;
+  z-index: 1030;
 }
 
 .navbar-logo {

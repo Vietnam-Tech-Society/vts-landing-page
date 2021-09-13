@@ -7,8 +7,7 @@ import './Header.css';
 import { NavMobileIcon } from '../../assets/icons';
 
 const homeStyle = {
-  backgroundColor: 'transparent',
-  zIndex: '2'
+  backgroundColor: 'transparent'
 }
 
 const normalStyle = {
@@ -27,7 +26,7 @@ const Header = () => {
   const { pathname } = useLocation();
   console.log(pathname);
   return (
-    <Navbar fixed="top" expand="lg" className="navbar-header" style={ pathname === '/' ? homeStyle : normalStyle }>
+    <Navbar expand="lg" className="navbar-header" style={ pathname === '/' ? homeStyle : normalStyle }>
       <Navbar.Brand className="logo-container" href="/">
         <img src={ pathname === '/' ? lightLogo : darkLogo } alt="logo" className="navbar-logo" />
       </Navbar.Brand>
