@@ -7,7 +7,7 @@ import header from "../../assets/img/product_page_header.png"
 
 const Product = () => {
     return (
-        <div >
+        <div className="product-container">
           <Row style={{ paddingLeft: "10vw", marginTop: "5vw"}} >
             <Col sm={12} xl={6} className="center">
               <h1 className="bold row-margin">Find, Book and Meet Mentors around the world </h1>

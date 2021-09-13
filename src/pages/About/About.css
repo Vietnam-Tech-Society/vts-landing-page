@@ -11,6 +11,13 @@
 .about-page{
     font-family: VTS;
 }
+
+@media (max-width: 1024px) {
+    .about-page {
+        padding-top: 70px;
+    }
+}
+
 #subheader-img{
     width: 75%;
     float: right;

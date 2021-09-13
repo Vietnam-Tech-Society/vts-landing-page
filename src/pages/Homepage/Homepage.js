@@ -8,7 +8,7 @@ import { Link } from 'react-router-dom'
 
 const Homepage = () => {
     return (
-        <>
+        <div>
             <div className="header">
                 <img className="image1" src={headerimage} alt="logo"></img>
                 <div className="header-text">
@@ -115,7 +115,7 @@ const Homepage = () => {
                     </Col>
                 </Row>
             </div>
-        </>
+        </div>
     );
 };
 

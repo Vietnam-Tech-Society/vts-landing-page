@@ -1,8 +1,4 @@
-
-
-
 .navbar-header {
-
   font-weight: bold;  
   padding-left: 10% !important;
   padding-right: 10% !important;
@@ -43,14 +39,21 @@
   .navbar-logo {
     width: 50%;
   }
-  
-
 }
 
 @media screen and (min-width: 1024px) {
   .navbar-logo {
     width: 40%;
   }
-  
+}
 
+.navbar-menu-select-link {
+  font-weight: 700;
+  line-height: 30px;
+  font-size: 20px;
+}
+
+#responsive-navbar-nav {
+  background-color: transparent;
+  z-index: 2;
 }
