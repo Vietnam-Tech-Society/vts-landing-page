@@ -11,7 +11,7 @@ const Product = () => {
         <div className="product-container">
           <Row style={{ paddingLeft: "10vw", marginTop: "5vw"}} >
             <Col sm={12} xl={6} className="center">
-              <h1 className="bold row-margin">
+              <h1 className="bold row-margin  ">
                 Find, Book and Meet Mentors around the world
               </h1>
               <h5 className="row-margin" style={{marginTop:"4vw"}}>
@@ -44,10 +44,10 @@ const Product = () => {
 
           <Row className="container-gap">
             <Col xs={12} md={4} className="center" >
-              <h1 className="bold row-margin"> Why mentors choose TechSphere</h1>
+              <h1 className="bold row-margin"> Why mentees choose TechSphere</h1>
             </Col>
             <Col xs={12} md={8} >
-              <ProductGrid array={constants.mentorArray} />
+              <ProductGrid array={constants.menteeArray} />
             </Col>
           </Row>
 
