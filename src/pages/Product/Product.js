@@ -4,6 +4,7 @@ import * as constants from '../../components/util/constants';
 import { Col, Row, Image, Button } from 'react-bootstrap'
 import './Product.css'
 import header from "../../assets/img/product_page_header.png"
+import { Link } from 'react-router-dom';
 
 const Product = () => {
     return (
@@ -16,12 +17,14 @@ const Product = () => {
               <h5 className="row-margin" style={{marginTop:"4vw"}}>
                 Get guidance and learn from mentors in world-class companies with our global community.
               </h5>
-              <Button
-                style={{backgroundColor:"#14ffd8", padding:"10px", color: "#010042", fontWeight: "700", borderStyle: "hidden"}}
-                className="row-margin farther"
-              >
-                Sign up for private beta testing &#62;
-              </Button>
+              <Link to={{ pathname:"https://techsphere.vietnamtechsociety.org/" }} target="_blank">
+                <Button
+                  style={{backgroundColor:"#14ffd8", padding:"10px", color: "#010042", fontWeight: "700", borderStyle: "hidden"}}
+                  className="row-margin farther"
+                >
+                  Sign up for private beta testing &#62;
+                </Button>
+              </Link>
             </Col>
             <Col sm={12} xl={6} className="img-container" >
               <Image src={header} id="img"/>
