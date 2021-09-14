@@ -1,7 +1,9 @@
 .navbar-header {
   font-weight: bold;  
-  padding-left: 10% !important;
-  padding-right: 10% !important;
+  padding-left: 5vw !important;
+  padding-right: 5vw !important;
+  padding-top: 20px !important;
+  padding-bottom: 20px !important;
   font-size: max(1vw, 15px);
   white-space: nowrap;
   position: absolute !important;

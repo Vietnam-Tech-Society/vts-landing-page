@@ -1,4 +1,3 @@
-
 @font-face {
     font-family: VTS-light;
     src: url(../../assets/font/brown-light.ttf);
@@ -70,28 +69,55 @@
     color: white;
 }
 
+.header-subtitle {
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 22px;
+}
+
 .image1 {
     position: relative;
     top: 0;
     left: 0;
     width: 100%; 
-    height: 125vw; 
     object-fit: cover; 
     object-position: 100%;
 }
 
+@media (max-width: 1023px) {
+    .image1 {
+        height: 900px;
+    }
+
+    .establishment-homepage {
+        margin-top: 100px;
+    }
+}
+
 .image2 {
     position: absolute;
-    top: 70%;
+    top: 850px;
     left: 10%;
     width: 80%;
 
 }
 
 .header-title {
-
-    font-size: 3.5rem;
     margin-bottom: 5vh;
+    font-weight: 700;
+    line-height: 60px;
+}
+
+@media (min-width: 1024px) {
+    .header-title {
+        font-size: 4.5rem;
+        font-weight: 800;
+    }
+
+    .header-subtitle {
+        font-size: 20px;
+        line-height: 28px;
+    }
 }
 
 .header-text{
@@ -102,10 +128,25 @@
 }
 
 
-.establishment {
-    padding: 5vw 10vw;
+.establishment-homepage {
+    padding: 5vw 5vw;
 }
 
+@media (max-width: 600px) {
+    .establishment-homepage {
+        margin-top: 450px;
+    }
+
+    .blue-button {
+        margin-top: 150px;
+    }
+}
+
+
+.button-arrow-icon {
+    display: inline-flex;
+    align-items: center;
+}
 
 .row-gap{
     margin: 5vw 5vw;
@@ -131,10 +172,9 @@
 
 .button-container{
     width: 80%;
-
 }
 
-@media screen and (min-width: 576px) {    
+@media screen and (min-width: 600px) {    
     .header-title {
         font-size: 2.5rem;
     }
@@ -150,9 +190,6 @@
         height: 125vw;
     }
     
-    .image1 {
-        height: 95vw; 
-    }
     .header-text{
         top: 25%;
         width: 80%;
@@ -177,10 +214,6 @@
     .long-column {
         height: 35vw;
     }
-
-
-    
-
 }
 
 @media screen and (min-width: 768px) {
@@ -202,9 +235,6 @@
         top: 15%;
     }
 
-    .image1 {
-        height: 70vw;
-    }
     .image2 {
         top: 50%;
  
@@ -252,10 +282,6 @@
     .header {
         height: 95vw;
     }
-    
-    .image1 {
-        height: 65vw;
-    }
 
     .button-container{
         width: 60%;
@@ -278,9 +304,6 @@
         height: 90vw;
     }
     
-    .image1 {
-        height: 60vw;
-    }
     .button-container{
         width: 50%;
 

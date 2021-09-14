@@ -4,7 +4,8 @@ import headerimage from "../../assets/img/header.png"
 import header from '../../assets/img/homepage_header.png'
 import mentorship from '../../assets/img/mentorship.png'
 import './Homepage.css'
-import { Link } from 'react-router-dom'
+import { Link } from 'react-router-dom';
+import { ButtonArrow } from '../../assets/icons';
 
 const Homepage = () => {
     return (
@@ -13,29 +14,46 @@ const Homepage = () => {
                 <img className="image1" src={headerimage} alt="logo"></img>
                 <div className="header-text">
                     <h1 className="header-title"> By techies, for techies </h1>
-                    <h5> A community for Vietnamese tech enthusiasts to share expertise, make meaningful connections, and support each other.</h5>
+                    <h5 className="header-subtitle"> A community for Vietnamese tech enthusiasts to share expertise, make meaningful connections, and support each other.</h5>
                     <Link to="/about">
                         <Button 
-                            style={{backgroundColor:"#14ffd8", color: "#010042", fontWeight: "700", borderStyle: "hidden", padding:"10px"}} 
-                            className="blue-button">
-                                Tell me more &#62;
+                            style={{
+                                backgroundColor:"#14ffd8",
+                                color: "#010042",
+                                borderStyle: "hidden",
+                                padding:"10px", 
+                                fontSize: '16px',
+                                fontWeight: "600"
+                            }} 
+                            className="blue-button"
+                        >
+                                Tell me more <span className="button-arrow-icon"><ButtonArrow /></span>
                         </Button>
                     </Link>
                 </div>
                 <img className="image2" src={header} alt=""></img>
             </div>
 
-            <div className="establishment">
+            <div className="establishment-homepage">
                 <Row>
                     <Col xs={12} lg={6}>
                         <h1 className="text-container row-gap" style={{fontWeight: "600"}}> TechSphere </h1>
                         <h4 className="text-container row-gap"> We are a non-profit organization, aspiring to be a top-of-mind organization for Vietnamese people in tech. It is our ambition to be a strong representation of the Vietnamese tech community in the U.S., E.U., Singapore and Vietnam.</h4>
                         <Link to={{ pathname:"https://techsphere.vietnamtechsociety.org/" }} target="_blank">
                             <Button
-                                style={{backgroundColor:"#EDF8FF", color: "#010042", fontWeight: "700", borderStyle: "hidden", padding:"10px", marginTop: "7.5vw", marginBottom: "7.5vw"}} 
+                                style={{
+                                    backgroundColor:"#EDF8FF",
+                                    color: "#010042",
+                                    borderStyle: "hidden",
+                                    padding:"10px",
+                                    fontSize: '16px',
+                                    marginTop: '7.5vw',
+                                    marginBottom: '7.5vw',
+                                    fontWeight: '600'
+                                }} 
                                 className="button-container row-gap"
                             >
-                                Start your mentorship here &#62;
+                                Start your mentorship here <span className="button-arrow-icon"><ButtonArrow /></span>
                             </Button>
                         </Link>
                     </Col>
