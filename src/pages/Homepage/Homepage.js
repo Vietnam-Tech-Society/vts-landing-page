@@ -38,7 +38,11 @@ const Homepage = () => {
                 <Row>
                     <Col xs={12} lg={6}>
                         <h1 className="text-container row-gap" style={{fontWeight: "600"}}> TechSphere </h1>
-                        <h4 className="text-container row-gap"> We are a non-profit organization, aspiring to be a top-of-mind organization for Vietnamese people in tech. It is our ambition to be a strong representation of the Vietnamese tech community in the U.S., E.U., Singapore and Vietnam.</h4>
+                        <h4 className="text-container row-gap">
+                            TechSphere is an on-demand mentorship platform that lets you schedule calls with mentors within a few clicks. 
+                            TechSphere gives mentees access to any suitable mentors seemlessly while giving mentors freedom to set 
+                            discussion topics and level of commitment
+                        </h4>
                         <Link to={{ pathname:"https://techsphere.vietnamtechsociety.org/" }} target="_blank">
                             <Button
                                 style={{
@@ -122,7 +126,9 @@ const Homepage = () => {
                         <h1 className="text-container row-gap" style={{fontWeight: "600"}}> Our Latest Blogs </h1>
                     </Col>
                     <Col xs={12} lg={6}>                     
-                        <h4 className="text-container row-gap">TechSphere is an on-demand mentorship platform that lets you schedule calls with mentors within a few clicks. TechSphere gives mentees access to any suitable mentors seemlessly while giving mentors freedom to set discussion topics and level of commitment</h4>
+                        <h4 className="text-container row-gap">
+                            A one-stop shop for all information you need to know about the journey of working in the tech industry as a Vietnamese professional
+                        </h4>
                         <Link to={{ pathname:"https://vietnamtechsociety.substack.com/" }} target="_blank">
                             <Button
                                 style={{backgroundColor:"#EDF8FF", color: "#010042", fontWeight: "700", borderStyle: "hidden", padding:"10px"}} 
