@@ -17,7 +17,7 @@ const Product = () => {
               <h5 className="row-margin" style={{marginTop:"4vw"}}>
                 Get guidance and learn from mentors in world-class companies with our global community.
               </h5>
-              <Link to={{ pathname:"https://techsphere.vietnamtechsociety.org/" }} target="_blank">
+              <Link to="/">
                 <Button
                   style={{backgroundColor:"#14ffd8", padding:"10px", color: "#010042", fontWeight: "700", borderStyle: "hidden"}}
                   className="row-margin farther"
@@ -55,8 +55,16 @@ const Product = () => {
             <Col xs={12} xl={9} className="center"  >
               <h2 className="bold row-margin" >Be the first one to experience our product</h2>
             </Col>
-            <Col xs={12} xl={3} className="center" style={{display:"flex"}}  >
-            <Button style={{backgroundColor:"#14ffd8", padding:"10px", color: "#010042", fontWeight: "700", borderStyle: "hidden"}} className="row-margin closer  center">Signup for beta testing &#62;</Button>
+            <Col xs={12} xl={3} className="center" style={{display:"flex"}}>
+            <Link to="/">
+              <Button 
+                style={{backgroundColor:"#14ffd8", padding:"10px", color: "#010042", fontWeight: "700", borderStyle: "hidden"}}
+                className="row-margin closer  center"
+              >
+                Signup for beta testing &#62;
+              </Button>
+            </Link>
+              
             </Col>
           </Row>
           
