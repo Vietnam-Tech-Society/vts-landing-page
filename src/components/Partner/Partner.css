@@ -1,0 +1,33 @@
+.partner-container {
+  width: 80%;
+  margin: auto;
+  margin-bottom: 5vw;
+}
+
+.partner-logo-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 20px;
+}
+
+.vng-logo {
+  height: auto;
+  width: 100px;
+}
+
+@media only screen and (min-width: 768px) {
+  .vng-logo {
+    width: 200px;
+  }
+} 
+
+@media only screen and (min-width: 992px) {
+  .partner-logo-container {
+    justify-content: left;
+  }
+
+  .vng-logo {
+    width: 300px;
+  }
+}

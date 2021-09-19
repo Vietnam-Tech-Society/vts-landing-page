@@ -5,25 +5,22 @@ const MemberGrid = ({ array }) => {
 
     return (
         <div  className="team-container">
-            <Container>
-                <Row>
-                {array.map((member, index) => {
-                  return (
-                    <Col xs={6} md={3} className="team-img-container">
-                      <Image className="team-img" src={member.url.default} alt="avatar" />
-                      <div className="team-description">
-                        <div className="name">{member.name}</div>
-                        <div className="org">{member.org}</div>
-                        <div className="role">{member.pos}</div>
-
-                      </div>
-                    </Col>
-                    
-                  );
-                })} 
-                </Row>
-              </Container>
-              
+          <Container>
+            <Row>
+              {array.map((member, index) => {
+                return (
+                  <Col sm={12} md={6} lg={3} className="team-img-container">
+                    <Image className="team-img" src={member.url.default} alt="avatar" />
+                    <div className="team-description">
+                      <div className="name">{member.name}</div>
+                      <div className="org">{member.org}</div>
+                      <div className="role">{member.pos}</div>
+                    </div>
+                  </Col>
+                );
+              })} 
+            </Row>
+            </Container>  
         </div>
     )
 

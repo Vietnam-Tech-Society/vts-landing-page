@@ -1,60 +1,55 @@
 .team-container {
-    width: 80%;
-    margin: auto;
-  }
-  
-  
-  .team-img-container, .team-img, .team-description {
-    width: 100%;
-    margin-bottom: 1vw;
-    font-family: VTS;
-  }
-  
-  
+  width: 80%;
+  margin: auto;
+}
+
+
+.team-img-container, .team-img, .team-description {
+  width: 100%;
+  margin-bottom: 1vw;
+  font-family: VTS;
+}
+
+.name {
+  font-weight: bold;
+  font-size: 1.25rem;
+}
+
+.role {
+  font-size: 1rem;
+}
+
+.org {
+  font-size: 1rem;
+  font-weight: 600;
+}
+
+@media screen and (min-width: 576px) {
   .name {
-    font-weight: bold;
-    font-size: 2.25vw;
+    font-size: 1.45rem;
+  }
+  
+  .org {
+    font-size: 1.3rem;
   }
   
   .role {
-    font-size: 1.75vw;
+    font-size: 1.3rem;
   }
+}
 
-  .org{
-    font-size: 1.75vw;
-    font-weight: 600;
-  }
-
-
-
-  @media screen and (min-width: 576px) {
-    .name {
-      font-size: 1.45vw;
-    }
-    
-    .org {
-      font-size: 1.3vw;
-    }
-    
-    .role {
-      font-size: 1.3vw;
-    }
-  
-
-  }
-
-  @media screen and (min-width: 992px) {
+@media screen and (min-width: 992px) {
   .name {
     font-weight: bold;
-    font-size: 1.3vw;
+    font-size: 1.5rem;
   }
-  
+
   .role {
-    font-size: 1.1vw;
+    font-size: 1.25rem;
   }
 
   .org{
-    font-size: 1.15vw;
+    font-size: 1.25rem;
     font-weight: 600;
   }
 }

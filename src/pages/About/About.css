@@ -35,7 +35,7 @@
 }
 
 .big-font {
-    font-size: 3rem;
+    font-size: 2.5rem;
 }
 
 .intro, .commitment, .establishment {
@@ -59,7 +59,7 @@
 
 .subheader-text{
     font-weight: 600;
-    font-size: 1.5rem;
+    font-size: 1rem;
     margin: 2vw 6vw;
 }
 

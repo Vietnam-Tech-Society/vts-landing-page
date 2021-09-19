@@ -7,6 +7,7 @@ import subheader from "../../assets/img/subheader.png"
 import about1 from "../../assets/img/about_us_1.png"
 import about2 from "../../assets/img/about_us_2.png"
 import * as constants from '../../components/util/constants';
+import { Partner } from '../../components/Partner'
 
 const About = () => {
     return(
@@ -65,14 +66,14 @@ const About = () => {
             </div>
 
             <div className="subheader">
-            <Row>
-                <Col xs={6}>
-                    <p className="subheader-text"> Our Team</p>
-                </Col>
-                <Col xs={6}>                     
-                    <Image id="subheader-img" src={subheader} alt="subheader"  />
-                </Col>
-            </Row>
+                <Row>
+                    <Col xs={6}>
+                        <p className="subheader-text"> Our Team</p>
+                    </Col>
+                    <Col xs={6}>                     
+                        <Image id="subheader-img" src={subheader} alt="subheader"  />
+                    </Col>
+                </Row>
             </div>
             <MemberGrid array={constants.teamInfo} />
 
@@ -86,11 +87,18 @@ const About = () => {
                     </Col>
                 </Row>
             </div>
-            <MemberGrid array={constants.mentorInfo} />
-
-  
-  
-      
+            <MemberGrid array={constants.mentorInfo} />  
+            <div className="subheader">
+                <Row>
+                    <Col xs={6}>
+                        <p className="subheader-text"> Our Partner</p>
+                    </Col>
+                    <Col xs={6}>                     
+                        <Image id="subheader-img" src={subheader} alt="subheader"  />
+                    </Col>
+                </Row>
+            </div>
+            <Partner />
         </div>
     )
 };
