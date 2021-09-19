@@ -14,17 +14,12 @@ const normalStyle = {
   backgroundColor: 'white'
 }
 
-const navHomeFontStyle = {
-  color: "white"
-}
-
 const navNormalFontStyle = {
   color: "#010042"
 }
 
 const Header = () => {
   const { pathname } = useLocation();
-  console.log(pathname);
   return (
     <Navbar expand="lg" className="navbar-header" style={ pathname === '/' ? homeStyle : normalStyle }>
       <Navbar.Brand className="logo-container" href="/">
@@ -38,28 +33,28 @@ const Header = () => {
           <Nav.Link
             href="/"
             className="navbar-menu-select-link"
-            style={ pathname === '/' ? navHomeFontStyle : navNormalFontStyle }
+            style={ navNormalFontStyle }
           >
             Home
           </Nav.Link>
           <Nav.Link
             href="/product"
             className="navbar-menu-select-link"
-            style={ pathname === '/' ? navHomeFontStyle : navNormalFontStyle }
+            style={ navNormalFontStyle }
           >
             Product
           </Nav.Link>
           <Nav.Link
             href="/about"
             className="navbar-menu-select-link"
-            style={ pathname === '/' ? navHomeFontStyle : navNormalFontStyle }
+            style={ navNormalFontStyle }
           >
             About Us
           </Nav.Link>
           <Nav.Link
             href="https://vietnamtechsociety.substack.com/"
             className="navbar-menu-select-link"
-            style={ pathname === '/' ? navHomeFontStyle : navNormalFontStyle }
+            style={ navNormalFontStyle }
           >
             Blog
           </Nav.Link>

@@ -13,6 +13,18 @@
   z-index: 1030;
 }
 
+#responsive-navbar-nav {
+  background-color: white !important;
+}
+
+.navbar-toggler {
+  border: 0px !important;
+}
+
+button.navbar-toggler:focus {
+  outline: 1px none;
+}
+
 .navbar-logo {
   width: 120%;
 }
