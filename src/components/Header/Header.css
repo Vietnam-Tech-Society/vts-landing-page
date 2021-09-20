@@ -14,7 +14,15 @@
 }
 
 #responsive-navbar-nav {
-  background-color: white !important;
+  background-color: transparent;
+  z-index: 2;
+}
+
+@media screen and (max-width: 768px) {
+  #responsive-navbar-nav {
+    background-color: white !important;
+    color: #010042 !important;
+  }
 }
 
 .navbar-toggler {
@@ -70,9 +78,4 @@ button.navbar-toggler:focus {
   font-weight: 700;
   line-height: 30px;
   font-size: 20px;
-}
-
-#responsive-navbar-nav {
-  background-color: transparent;
-  z-index: 2;
 }
