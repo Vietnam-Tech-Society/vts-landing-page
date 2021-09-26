@@ -1,13 +1,34 @@
-import React from 'react'
-import { Col, Row, Image, Button } from 'react-bootstrap'
-import headerimage from "../../assets/img/header.png"
-import header from '../../assets/img/homepage_header.png'
-import mentorship from '../../assets/img/mentorship.png'
-import './Homepage.css'
+import React, { useState, useEffect } from 'react';
+import { Col, Row, Image, Button } from 'react-bootstrap';
+import headerimage from "../../assets/img/header.png";
+import header from '../../assets/img/homepage_header.png';
+import mentorship from '../../assets/img/mentorship.png';
+import './Homepage.css';
 import { Link } from 'react-router-dom';
 import { ButtonArrow } from '../../assets/icons';
+import headerImageMobile from '../../assets/img/HomePage - mobile.png';
+
+function getWindowDimensions() {
+    const { innerWidth: width, innerHeight: height } = window;
+    console.log(width, height);
+    return {
+        width,
+        height
+    };
+}
 
 const Homepage = () => {
+    const [windowDimensions, setWindowDimensions] = useState(getWindowDimensions());
+
+    useEffect(() => {
+        function handleResize() {
+            setWindowDimensions(getWindowDimensions());
+        }
+
+        window.addEventListener('resize', handleResize);
+        return () => window.removeEventListener('resize', handleResize);
+    }, []);
+
     return (
         <div>
             <div className="header">
@@ -27,11 +48,13 @@ const Homepage = () => {
                             }} 
                             className="blue-button"
                         >
-                                Tell me more <span className="button-arrow-icon"><ButtonArrow /></span>
+                            Tell me more <span className="button-arrow-icon"><ButtonArrow /></span>
                         </Button>
                     </Link>
                 </div>
-                <img className="image2" src={header} alt=""></img>
+                <div className="team-image-container">
+                    <img className="team-image" src={ windowDimensions.width > 600 ? header : headerImageMobile } alt="VTS team"></img>
+                </div>
             </div>
 
             <div className="establishment-homepage">
