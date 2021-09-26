@@ -60,8 +60,8 @@ const Homepage = () => {
             <div className="establishment-homepage">
                 <Row>
                     <Col xs={12} lg={6}>
-                        <h1 className="text-container row-gap" style={{fontWeight: "600"}}> TechSphere </h1>
-                        <h4 className="text-container row-gap">
+                        <h1 className="text-container row-gap" style={{fontWeight: "600"}}>TechSphere</h1>
+                        <h4 className="text-container row-gap homepage-normal-text">
                             TechSphere is an on-demand mentorship platform that lets you schedule calls with mentors within a few clicks. 
                             TechSphere gives mentees access to any suitable mentors seemlessly while giving mentors freedom to set 
                             discussion topics and level of commitment
@@ -88,68 +88,58 @@ const Homepage = () => {
                         <Image id="image-est" src={mentorship} alt="commitment"  />
                     </Col>
                 </Row>
-            </div>
-
-
-            <div >
                 <Row>
                     <Col xs={12} lg={4}>
                         <div className="text-grid long-column" > 
                             <div className="text-grid-container"> 
-
-                            <h6> “I hope to build a platformfor people who seek mentorship and connection.”</h6>
-                               <p> Vivian Luu, Software Engineer </p>
+                                <h6 className="testimony-card-text"> “I hope to build a platform for people who seek mentorship and connection.”</h6>
+                                <p className="testimony-card-text-author"> Vivian Luu, Software Engineer </p>
                             </div>
                         </div>
                         <div className="text-grid short-column" >
-                            <div className="text-grid-container" style={{top: "45%"}}> 
-                                 <h6>
-                            "Mentorship should be easy and accessible to Vietnamese students!"
+                            <div className="text-grid-container"> 
+                                <h6 className="testimony-card-text">
+                                    "Mentorship should be easy and accessible to Vietnamese students!"
                                 </h6>
-                                <p> Anh Tran, Product Manager </p>
-                                </div>
-                            
+                                <p className="testimony-card-text-author"> Anh Tran, Product Manager </p>
+                            </div>
                         </div>
                     </Col>
                     <Col xs={12} lg={4}>
                         <div className="text-grid short-column" >
-                            <div className="text-grid-container" style={{top: "55%"}}> 
-                            <h6> “It’s fun to be in a group of weird people at VTS!”</h6>
-                            <p> Theodore Le, Chief of Marketing </p>
+                            <div className="text-grid-container"> 
+                                <h6 className="testimony-card-text"> “It’s fun to be in a group of weird people at VTS!”</h6>
+                                <p className="testimony-card-text-author"> Theodore Le, Chief of Marketing </p>
                             </div>
                         </div>
                         <div className="text-grid long-column">
-                            <div className="text-grid-container" style={{top: "50%", right: "2%"}}> 
-                                <h6> "It’s always hard when you want to change your career path, but I’m thankful that VTS connects me with the right mentor in my new direction."</h6>
-                                <p> Quynh Nguyen, Marketing </p>
+                            <div className="text-grid-container" style={{ float: 'right' }}> 
+                                <h6 className="testimony-card-text"> "It’s always hard when you want to change your career path, but I’m thankful that VTS connects me with the right mentor in my new direction."</h6>
+                                <p className="testimony-card-text-author"> Quynh Nguyen, Marketing </p>
                             </div>
                         </div>
                     </Col>
                     <Col xs={12} lg={4}>
                         <div className="text-grid long-column" >
-                            <div className="text-grid-container" style={{ right: "2%"}}> 
-                                <h6> "Son shared with me a lot of useful materials and advice on doing LeetCode. He even offered helping with mock interview and referrals later on."</h6>
-                                <p> Diep Vu, TechSphere's Community Member </p>
+                            <div className="text-grid-container" style={{ float: 'right' }}> 
+                                <h6 className="testimony-card-text"> "Son shared with me a lot of useful materials and advice on doing LeetCode. He even offered helping with mock interview and referrals later on."</h6>
+                                <p className="testimony-card-text-author"> Diep Vu, TechSphere's Community Member </p>
                             </div>
                         </div>
                         <div className="text-grid short-column" >
-                            <div className="text-grid-container top left"> 
-                            <h6>"Why couldn’t the Vietnamese people work together and dominate the techcareer like Indian and Chinese?"</h6>
-                            <p> Henry Le, CEO </p>
+                            <div className="text-grid-container"> 
+                                <h6 className="testimony-card-text">"Why couldn’t the Vietnamese people work together and dominate the techcareer like Indian and Chinese?"</h6>
+                                <p className="testimony-card-text-author"> Henry Le, CEO </p>
                             </div>
                         </div>
                     </Col>
                 </Row>
-            </div>
-
-
-            <div className="establishment">
-                <Row>
+                <Row className="homepage-latest-blog-container">
                     <Col xs={12} lg={6}>
                         <h1 className="text-container row-gap" style={{fontWeight: "600"}}> Our Latest Blogs </h1>
                     </Col>
                     <Col xs={12} lg={6}>                     
-                        <h4 className="text-container row-gap">
+                        <h4 className="text-container row-gap homepage-normal-text">
                             A one-stop shop for all information you need to know about the journey of working in the tech industry as a Vietnamese professional
                         </h4>
                         <Link to={{ pathname:"https://vietnamtechsociety.substack.com/" }} target="_blank">

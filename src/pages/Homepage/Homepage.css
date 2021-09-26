@@ -28,16 +28,13 @@
     background-color: #175996;
     color: white;
     position: relative;
-    border-radius: 2.5%;
+    border-radius: 10px;
+    padding: 2rem;
 }
 
-.text-grid-container{
+.text-grid-container {
     width: 80%;
     height: 50%;
-    position: absolute;
-    margin: 1.5vw;
-    border-radius: 2.5%;
-
 }
 
 .top{
@@ -106,6 +103,7 @@
     display: block;
     margin-left: auto;
     margin-right: auto;
+    box-shadow: 0px 12px 31px 7px rgba(23, 89, 150, 0.08);
 }
 
 .header-title {
@@ -135,7 +133,7 @@
 
 
 .establishment-homepage {
-    padding: 5vw 5vw;
+    padding: 5vw 10rem;
 }
 
 @media (max-width: 600px) {
@@ -168,8 +166,14 @@
     width: 100%;
     margin: 3vw 0vw;
     padding: 3vw 0vw;
+    font-size: 32px;
+    line-height: 40px;
+}
 
-
+.homepage-normal-text {
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 28px;
 }
 
 #image-est{
@@ -180,6 +184,27 @@
 
 .button-container{
     width: 80%;
+}
+
+.testimony-card-text {
+    font-weight: 600;
+    font-size: 1rem;
+    line-height: 22px;
+}
+
+.establishment {
+    padding: 5vw 10vw;
+}
+
+.testimony-card-text-author {
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 19.6px;
+}
+
+.homepage-latest-blog-container {
+    margin-top: 130px;
+    margin-bottom: 130px;
 }
 
 @media screen and (min-width: 600px) {    
@@ -204,8 +229,6 @@
 
     .button-container{
         width: 60%;
-        
-
     }
 
     .short-column {
@@ -251,6 +274,18 @@
     .team-image {
         width: 1200px;
     }
+
+    .text-grid {
+        padding: 1rem;
+    }
+
+    .testimony-card-text {
+        font-size: 22px;
+    }
+
+    .testimony-card-text-author {
+        font-size: 14px;
+    }
 }
 
 @media screen and (min-width: 992px) {
@@ -288,6 +323,23 @@
     .team-image {
         width: 1200px;
     }
+
+    .text-grid {
+        padding: 1rem;
+    }
+
+    .testimony-card-text {
+        font-size: 22px;
+    }
+
+    .testimony-card-text-author {
+        font-size: 14px;
+    }
+
+    .homepage-latest-blog-container {
+        margin-top: 200px;
+        margin-bottom: 150px;
+    }
 }
 
 @media screen and (min-width: 1200px) {
@@ -307,7 +359,6 @@
 
     }
 
-
     .short-column {
         height: 15vw;
     }
@@ -318,5 +369,22 @@
 
     .team-image {
         width: 1200px;
+    }
+
+    .text-grid-container {
+        padding: 1rem;
+    }
+
+    .testimony-card-text {
+        font-size: 22px;
+    }
+
+    .testimony-card-text-author {
+        font-size: 14px;
+    }
+
+    .homepage-latest-blog-container {
+        margin-top: 200px;
+        margin-bottom: 150px;
     }
 }
