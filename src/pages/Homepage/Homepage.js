@@ -7,15 +7,7 @@ import './Homepage.css';
 import { Link } from 'react-router-dom';
 import { ButtonArrow } from '../../assets/icons';
 import headerImageMobile from '../../assets/img/HomePage - mobile.png';
-
-function getWindowDimensions() {
-    const { innerWidth: width, innerHeight: height } = window;
-    console.log(width, height);
-    return {
-        width,
-        height
-    };
-}
+import { getWindowDimensions } from '../../util/GetWindowDimensions';
 
 const Homepage = () => {
     const [windowDimensions, setWindowDimensions] = useState(getWindowDimensions());
