@@ -61,7 +61,7 @@ const Product = () => {
                 style={{backgroundColor:"#14ffd8", padding:"10px", color: "#010042", fontWeight: "700", borderStyle: "hidden"}}
                 className="row-margin closer  center"
               >
-                Signup for beta testing &#62;
+                Sign up for beta testing &#62;
               </Button>
             </Link>
               

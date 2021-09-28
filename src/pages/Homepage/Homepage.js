@@ -72,7 +72,7 @@ const Homepage = () => {
                                 }} 
                                 className="button-container row-gap"
                             >
-                                Start your mentorship here <span className="button-arrow-icon"><ButtonArrow /></span>
+                                Sign up for private beta testing <span className="button-arrow-icon"><ButtonArrow /></span>
                             </Button>
                         </Link>
                     </Col>

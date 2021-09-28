@@ -13,7 +13,7 @@ const About = () => {
     return(
         <div className="about-page">
             <div className="intro">
-                    <p className="text-container big-font text-bold"> To advance Vietnamese  <br/>
+                    <p className="text-container big-font text-bold">To advance Vietnamese  <br/>
                     students and professionals 
                     </p>
                     <h3 className="text-container text-bold">
