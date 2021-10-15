@@ -1,6 +1,11 @@
-.product-page {
+.product-container {
     width: 100%;
-    margin: auto;
+}
+
+@media (max-width: 1024px) {
+    .product-container {
+        padding-top: 70px;
+    }
 }
 
 .img-container{
@@ -8,8 +13,6 @@
     margin: auto;
 
 }
-
-
 
 #img{
     width: 100%;

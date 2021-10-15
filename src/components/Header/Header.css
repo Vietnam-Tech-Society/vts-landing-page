@@ -1,13 +1,36 @@
-
-
-
 .navbar-header {
-
   font-weight: bold;  
-  padding-left: 10% !important;
-  padding-right: 10% !important;
+  padding-left: 5vw !important;
+  padding-right: 5vw !important;
+  padding-top: 20px !important;
+  padding-bottom: 20px !important;
   font-size: max(1vw, 15px);
   white-space: nowrap;
+  position: absolute !important;
+  top: 0;
+  right: 0;
+  left: 0;
+  z-index: 1030;
+}
+
+#responsive-navbar-nav {
+  background-color: transparent;
+  z-index: 2;
+}
+
+@media screen and (max-width: 768px) {
+  #responsive-navbar-nav {
+    background-color: white !important;
+    color: #010042 !important;
+  }
+}
+
+.navbar-toggler {
+  border: 0px !important;
+}
+
+button.navbar-toggler:focus {
+  outline: 1px none;
 }
 
 .navbar-logo {
@@ -43,14 +66,16 @@
   .navbar-logo {
     width: 50%;
   }
-  
-
 }
 
 @media screen and (min-width: 1024px) {
   .navbar-logo {
     width: 40%;
   }
-  
+}
 
+.navbar-menu-select-link {
+  font-weight: 700;
+  line-height: 30px;
+  font-size: 20px;
 }

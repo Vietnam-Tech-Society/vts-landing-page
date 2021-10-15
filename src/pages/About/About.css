@@ -11,6 +11,13 @@
 .about-page{
     font-family: VTS;
 }
+
+@media (max-width: 1024px) {
+    .about-page {
+        padding-top: 70px;
+    }
+}
+
 #subheader-img{
     width: 75%;
     float: right;
@@ -28,7 +35,8 @@
 }
 
 .big-font {
-    font-size: 3rem;
+    font-size: 2.5rem;
+    line-height: 83.5px;
 }
 
 .intro, .commitment, .establishment {
@@ -52,7 +60,7 @@
 
 .subheader-text{
     font-weight: 600;
-    font-size: 1.5rem;
+    font-size: 1rem;
     margin: 2vw 6vw;
 }
 

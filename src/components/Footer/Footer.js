@@ -3,6 +3,7 @@ import bigLogo from "../../assets/img/Logo_lettermark_dark.svg";
 import { Row, Col } from 'react-bootstrap';
 import './Footer.css';
 import { MailIcon, FBIcon, IGIcon } from '../../assets/icons'; 
+import { Link } from 'react-router-dom';
 
 const Footer = () => {
   const [isMobile, setIsMobile] = useState(getWindowDimensions());
@@ -36,7 +37,9 @@ const Footer = () => {
               </Col>
               <Col xs={12} md={5} className="footer-social-media">
                 <MailIcon />
-                <FBIcon />
+                <Link to={{ pathname: "https://www.facebook.com/VietnamTechSociety" }} target="_blank">
+                  <FBIcon />
+                </Link>
                 <IGIcon />
               </Col>
             </Row> 
@@ -58,7 +61,9 @@ const Footer = () => {
             <Row>
               <Col className="footer-social-media">
                 <MailIcon />
-                <FBIcon />
+                <Link to={{ pathname: "https://www.facebook.com/VietnamTechSociety" }} target="_blank">
+                  <FBIcon />
+                </Link>
                 <IGIcon />
               </Col>
             </Row> 
