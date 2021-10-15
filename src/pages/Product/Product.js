@@ -5,7 +5,6 @@ import * as constants from '../../components/util/constants';
 import { Col, Row, Image, Button } from 'react-bootstrap'
 import './Product.css'
 import header from "../../assets/img/product_page_header.png"
-import { Link } from 'react-router-dom';
 
 const Product = () => {
     return (
