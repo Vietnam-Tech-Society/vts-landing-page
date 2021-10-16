@@ -28,20 +28,11 @@ const Homepage = () => {
                 <div className="header-text">
                     <h1 className="header-title"> By techies, for techies </h1>
                     <h5 className="header-subtitle"> A community for Vietnamese tech enthusiasts to share expertise, make meaningful connections, and support each other.</h5>
-                    <Link to="/about">
-                        <Button 
-                            style={{
-                                backgroundColor:"#14ffd8",
-                                color: "#010042",
-                                borderStyle: "hidden",
-                                padding:"10px", 
-                                fontSize: '16px',
-                                fontWeight: "600"
-                            }} 
-                            className="blue-button"
-                        >
-                            Tell me more <span className="button-arrow-icon"><ButtonArrow /></span>
-                        </Button>
+                    <Link to="/about" style={{ textDecoration: 'none' }}>
+                        <div className="blue-button">
+                            <div style={{ fontWeight: '600', fontSize: '1rem', lineHeight: '45px', width: "80%" }}>Tell me more</div>
+                            <span className="button-arrow-icon"><ButtonArrow /></span>
+                        </div>
                     </Link>
                 </div>
                 <div className="team-image-container">
@@ -58,22 +49,43 @@ const Homepage = () => {
                             TechSphere gives mentees access to any suitable mentors seemlessly while giving mentors freedom to set 
                             discussion topics and level of commitment
                         </h4>
-                        <Link to={{ pathname:"https://techsphere.vietnamtechsociety.org/" }} target="_blank">
-                            <Button
+                        <Link 
+                            to={{ pathname:"https://techsphere.vietnamtechsociety.org/" }}
+                            target="_blank"
+                            className="row-gap"
+                            style={{
+                                textDecoration: 'none',
+                                height: '50px',
+                                width: '300px',
+                                display: 'inline-block'
+                            }}
+                        >
+                            <div
                                 style={{
                                     backgroundColor:"#EDF8FF",
                                     color: "#010042",
                                     borderStyle: "hidden",
-                                    padding:"10px",
                                     fontSize: '16px',
-                                    marginTop: '7.5vw',
-                                    marginBottom: '7.5vw',
-                                    fontWeight: '600'
+                                    fontWeight: '600',
+                                    width: '100%',
+                                    height: '100%',
+                                    display: 'flex',
+                                    flexDirection: 'row',
+                                    justifyContent: 'flex-end',
+                                    alignItems: 'center',
+                                    padding: '1rem',
+                                    borderRadius: '0.5rem'
                                 }} 
-                                className="button-container row-gap"
+                                className="button-container"
                             >
-                                Sign up for private beta testing <span className="button-arrow-icon"><ButtonArrow /></span>
-                            </Button>
+                                <div style={{ marginRight: '1rem' }}>
+                                    
+                                    Sign up for private beta testing
+                                </div>
+                                <div style={{verticalAlign: 'center'}}>
+                                    <ButtonArrow />
+                                </div>
+                            </div>
                         </Link>
                     </Col>
                     <Col xs={12} lg={6}>                     

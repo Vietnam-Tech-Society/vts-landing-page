@@ -54,7 +54,17 @@
 }
 
 .blue-button{
-    margin: 3vw 0vw;
+    margin: 3vw auto;
+    background-color: #14ffd8;
+    color: #010042;
+    border-style: hidden;
+    padding-left: 1rem;
+    padding-right: 1rem;
+    width: 170px;
+    height: 50px;
+    border-radius: 0.5rem;
+    display: flex;
+    justify-content: center;
 }
 
 .header {
