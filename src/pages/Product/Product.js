@@ -13,9 +13,9 @@ const Product = () => {
             <Col sm={12} xl={6} className="center">
               <h1 className="bold row-margin">Find, Book and Meet Mentors around the world </h1>
               <h5 className="row-margin" style={{marginTop:"4vw"}} >Get guidance and learn from over 2,261+ mentors in world-class companies with our global community.</h5>
-              <Link to={{ pathname: "https://bit.ly/TechSphereSignUp" }} target="_blank">
+              <Link to={{ pathname: "https://techsphere.app/" }} target="_blank">
                 <Button style={{backgroundColor:"#14ffd8", padding:"10px", color: "#010042", fontWeight: "700", borderStyle: "hidden"}} className="row-margin farther">
-                  Sign up for private beta testing &#62;
+                  Go to Techsphere! &#62;
                 </Button>
               </Link>
             </Col>
@@ -49,8 +49,8 @@ const Product = () => {
               <h2 className="bold row-margin" >Be the first one to experience our product</h2>
             </Col>
             <Col xs={12} xl={3} className="center" style={{display:"flex"}}  >
-            <Link to={{ pathname: "https://bit.ly/TechSphereSignUp" }} target="_blank">
-              <Button style={{backgroundColor:"#14ffd8", padding:"10px", color: "#010042", fontWeight: "700", borderStyle: "hidden"}} className="row-margin closer  center">Sign up for private beta testing &#62;
+            <Link to={{ pathname: "https://techsphere.app/" }} target="_blank">
+              <Button style={{backgroundColor:"#14ffd8", padding:"10px", color: "#010042", fontWeight: "700", borderStyle: "hidden"}} className="row-margin closer  center">Go to Techsphere!&#62;
               </Button>
             </Link>
             </Col>

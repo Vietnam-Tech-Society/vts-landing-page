@@ -50,7 +50,7 @@ const Homepage = () => {
                             discussion topics and level of commitment
                         </h4>
                         <Link 
-                            to={{ pathname:"https://techsphere.vietnamtechsociety.org/" }}
+                            to={{ pathname:"https://techsphere.app/" }}
                             target="_blank"
                             className="row-gap"
                             style={{
@@ -79,8 +79,7 @@ const Homepage = () => {
                                 className="button-container"
                             >
                                 <div style={{ marginRight: '1rem' }}>
-                                    
-                                    Sign up for private beta testing
+                                   Take me there!
                                 </div>
                                 <div style={{verticalAlign: 'center'}}>
                                     <ButtonArrow />
